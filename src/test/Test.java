@@ -2,12 +2,9 @@ package test;
 
 public class Test {
     public static void main(String[] args) {
-        String n = "123";
-        int a = 4;
-
-        if(n.contains(String.valueOf(a))){
-            System.out.println("true");
-        }
+        String n = "1000000000000000000000000000001";
+//        System.out.println(Long.parseLong(n));
+        System.out.println(String.valueOf(Double.parseDouble(n)));
 
 
     }
