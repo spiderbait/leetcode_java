@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/S13_Roman_to_Integer/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S1_Two_Sum/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S27_Remove_Element/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S7_Reverse_Integer/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S169_Majority_Element/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S206_Reverse_Linked_List/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S217_Contains_Duplicate/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S342_Power_of_Four/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S344_Reverse_String/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S371_Sum_of_Two_Integers/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S374_Guess_Number_Higher_or_Lower/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S387_First_Unique_Character_in_a_String/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S412_Fizz_Buzz/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S448_Find_All_Numbers_Disappeared_in_an_Array/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S860_Lemonade_Change/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S876_Middle_of_the_Linked_List/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S929_Unique_Email_Addresses/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,6 +48,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -115,7 +129,8 @@
       <workItem from="1565831118081" duration="7330000" />
       <workItem from="1565933021692" duration="10000" />
       <workItem from="1567056812505" duration="2288000" />
-      <workItem from="1567502151957" duration="366000" />
+      <workItem from="1567502151957" duration="824000" />
+      <workItem from="1568208207230" duration="1707000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -124,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565864362110</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add s1, s7, s13, s27,">
+      <created>1567514175642</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567514175642</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +167,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="two problems added" />
-    <option name="LAST_COMMIT_MESSAGE" value="two problems added" />
+    <MESSAGE value="add s1, s7, s13, s27," />
+    <option name="LAST_COMMIT_MESSAGE" value="add s1, s7, s13, s27," />
   </component>
 </project>
