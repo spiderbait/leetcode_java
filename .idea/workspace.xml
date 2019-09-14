@@ -2,6 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/S169_Majority_Element/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S206_Reverse_Linked_List/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S217_Contains_Duplicate/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S342_Power_of_Four/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S344_Reverse_String/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S371_Sum_of_Two_Integers/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S374_Guess_Number_Higher_or_Lower/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S387_First_Unique_Character_in_a_String/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S412_Fizz_Buzz/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S448_Find_All_Numbers_Disappeared_in_an_Array/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S860_Lemonade_Change/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S876_Middle_of_the_Linked_List/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S929_Unique_Email_Addresses/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,7 +24,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -23,21 +37,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1PjkSDwkVD2jRPXQY3xUqMC6ro5" />
+  <component name="ProjectId" id="1Q5O61p7kuZ78WrU31g7tSk1aRV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565864328734" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565928244453" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="S2_Add_Two_Numbers" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -52,39 +66,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution (2)">
+  <component name="RunManager" selected="Application.Solution">
     <configuration name="HelloLeetcode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hello_leetcode.HelloLeetcode" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="hello_leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S1021_Remove_Outermost_Parentheses.Solution" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="S1021_Remove_Outermost_Parentheses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S2_Add_Two_Numbers.Solution" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="S2_Add_Two_Numbers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,10 +108,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution (2)" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.HelloLeetcode" />
       </list>
     </recent_temporary>
@@ -140,28 +126,25 @@
       <updated>1565706955070</updated>
       <workItem from="1565706956290" duration="874000" />
       <workItem from="1565709757746" duration="83000" />
-      <workItem from="1565831118081" duration="6435000" />
-      <workItem from="1565870966945" duration="376000" />
-      <workItem from="1565871353263" duration="4488000" />
-      <workItem from="1566392548850" duration="132000" />
-      <workItem from="1566392912852" duration="232000" />
-      <workItem from="1566394896742" duration="612000" />
-      <workItem from="1566909902635" duration="9105000" />
-      <workItem from="1567513996669" duration="461000" />
+      <workItem from="1565831118081" duration="7330000" />
+      <workItem from="1565933021692" duration="10000" />
+      <workItem from="1567056812505" duration="2288000" />
+      <workItem from="1567502151957" duration="824000" />
+      <workItem from="1568208207230" duration="1707000" />
     </task>
-    <task id="LOCAL-00001" summary="added solution for remove outermost parentheses">
-      <created>1565875201875</created>
+    <task id="LOCAL-00001" summary="two problems added">
+      <created>1565864362109</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1565875201875</updated>
+      <updated>1565864362110</updated>
     </task>
-    <task id="LOCAL-00002" summary="added solution for add two numbers (not solved yet)">
-      <created>1566919336289</created>
+    <task id="LOCAL-00002" summary="add s1, s7, s13, s27,">
+      <created>1567514175642</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1566919336289</updated>
+      <updated>1567514175642</updated>
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
@@ -183,8 +166,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added solution for remove outermost parentheses" />
-    <MESSAGE value="added solution for add two numbers (not solved yet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added solution for add two numbers (not solved yet)" />
+    <MESSAGE value="two problems added" />
+    <MESSAGE value="add s1, s7, s13, s27," />
+    <option name="LAST_COMMIT_MESSAGE" value="add s1, s7, s13, s27," />
   </component>
 </project>
