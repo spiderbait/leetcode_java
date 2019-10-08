@@ -4,17 +4,22 @@ import java.util.concurrent.Semaphore;
 
 class FooBar {
     private int n;
+    Semaphore A;
+    Semaphore B;
 
     public FooBar(int n) {
         this.n = n;
+        A = new Semaphore(1);
+        B = new Semaphore(0);
     }
 
     public void foo(Runnable printFoo) throws InterruptedException {
 
         for (int i = 0; i < n; i++) {
-
+//            A.acquire();
             // printFoo.run() outputs "foo". Do not change or remove this line.
             printFoo.run();
+//            B.release();
         }
     }
 
@@ -22,8 +27,10 @@ class FooBar {
 
         for (int i = 0; i < n; i++) {
 
+//            B.acquire();
             // printBar.run() outputs "bar". Do not change or remove this line.
             printBar.run();
+//            A.release();
         }
     }
 

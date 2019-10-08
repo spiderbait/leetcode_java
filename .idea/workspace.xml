@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S1114_Print_in_Order/PrintFirst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S1114_Print_in_Order/PrintSecond.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S1114_Print_in_Order/PrintThird.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S1114_Print_in_Order/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S1114_Print_in_Order/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S1115_Print_FooBar_Alternately/FooBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S1115_Print_FooBar_Alternately/PrintBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S1115_Print_FooBar_Alternately/PrintFoo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/magic_cube_core/MagicCubeCore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S1115_Print_FooBar_Alternately/FooBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S1115_Print_FooBar_Alternately/FooBar.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -163,6 +153,7 @@
       <workItem from="1569812654137" duration="1266000" />
       <workItem from="1570495344626" duration="217000" />
       <workItem from="1570516882843" duration="4717000" />
+      <workItem from="1570537214460" duration="889000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
