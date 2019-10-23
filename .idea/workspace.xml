@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="added">
-      <change afterPath="$PROJECT_DIR$/src/reflection/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reflection/Banana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reflection/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reflection/ReflectClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reflection/Test.java" afterDir="false" />
+    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/S1221_Split_a_String_in_Balanced_Strings/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S938_Range_Sum_of_BST/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S938_Range_Sum_of_BST/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/hello_leetcode/HelloLeetcode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/hello_leetcode/HelloLeetcode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hello_leetcode/HelloLeetcode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hello_leetcode/HelloLeetcode.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,20 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test (2)">
-    <configuration name="FooBar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S1115_Print_FooBar_Alternately.FooBar" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="S1115_Print_FooBar_Alternately.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Solution">
     <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Graph.Graph" />
       <module name="leetcode" />
@@ -99,12 +79,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S807_Max_Increase_to_Keep_City_Skyline.Solution" />
+    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S1221_Split_a_String_in_Balanced_Strings.Solution" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S807_Max_Increase_to_Keep_City_Skyline.*" />
+          <option name="PATTERN" value="S1221_Split_a_String_in_Balanced_Strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S938_Range_Sum_of_BST.Solution" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="S938_Range_Sum_of_BST.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Test (2)" />
         <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.Graph" />
-        <item itemvalue="Application.FooBar" />
-        <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +177,7 @@
       <workItem from="1569812654137" duration="1266000" />
       <workItem from="1570495344626" duration="217000" />
       <workItem from="1570516882843" duration="4819000" />
-      <workItem from="1570581681946" duration="30604000" />
+      <workItem from="1570581681946" duration="35778000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -228,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571042948441</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added reflection">
+      <created>1571815268757</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571815268757</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +258,7 @@
     <MESSAGE value="add 1114 and 1115" />
     <MESSAGE value="graph added" />
     <MESSAGE value="delete import file" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete import file" />
+    <MESSAGE value="added reflection" />
+    <option name="LAST_COMMIT_MESSAGE" value="added reflection" />
   </component>
 </project>
