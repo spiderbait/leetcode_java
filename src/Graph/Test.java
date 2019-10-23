@@ -1,8 +1,6 @@
 package Graph;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,11 +12,8 @@ public class Test {
     String driver = "com.mysql.cj.jdbc.Driver";
     String url = "jdbc:mysql://localhost:3306/test";
     String user = "root";
-    String password = "123456";
+    String password = "pass";
     String tableName = "etl_job_dependency";
-
-
-
 
     Test() {
         try {
@@ -43,9 +38,9 @@ public class Test {
 
     }
 
-    public List<String> getVertices() {
-        String sql = "select job_dependency from etl_job_dependency where job_dependency like 'S%' and job_dependency not in (select etl_job from etl_job_dependency) group by job_dependency";
-        List<String> resultsList = new ArrayList<>();
+    public List<Vertex> getVertices() {
+        String sql = "select dependency_job from etl_job_dependency where dependency_job like 'S%' and dependency_job not in (select etl_job from etl_job_dependency) group by dependency_job";
+        List<Vertex> resultsList = new ArrayList<>();
 
         try {
             stmt = (PreparedStatement) conn.prepareStatement(sql);
@@ -53,7 +48,7 @@ public class Test {
             while(results.next()) {
                 String v = results.getString(1);
 //                System.out.println(v);
-                resultsList.add(v);
+                resultsList.add(new Vertex(v));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -61,17 +56,17 @@ public class Test {
         return resultsList;
     }
 
-    public List<String> getJobs(String v) {
-        String sql = "select etl_job from etl_job_dependency where job_dependency = ?";
-        List<String> resultsList = new ArrayList<>();
+    public List<Vertex> getJobs(Vertex v) {
+        String sql = "select etl_job from etl_job_dependency where dependency_job = ?";
+        List<Vertex> resultsList = new ArrayList<>();
         try {
             stmt = (PreparedStatement) conn.prepareStatement(sql);
-            stmt.setString(1, v);
+            stmt.setString(1, v.getName());
 
             ResultSet results = stmt.executeQuery();
             while(results.next()) {
                 String job = results.getString(1);
-                resultsList.add(job);
+                resultsList.add(new Vertex(job));
 //                System.out.println(job);
             }
         } catch (SQLException e) {
@@ -81,9 +76,51 @@ public class Test {
         return resultsList;
     }
 
+//    public void buildVertex(Vertex v) {
+//        String sql = "select etl_job from etl_job_dependency where job_dependency = ?";
+//        List<String> resultsList = new ArrayList<>();
+//        try {
+//            stmt = (PreparedStatement) conn.prepareStatement(sql);
+//            stmt.setString(1, v.getName());
+//
+//            ResultSet results = stmt.executeQuery();
+//            while(results.next()) {
+//                Vertex adjV = new Vertex(results.getString(1));
+//                g.addDirectEdge(v, adjV);
+//            }
+//
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//    }
+
+    public Graph buildGraph(Graph g, Vertex o) {
+        if(!g.isVertexExistsByName(o.getName())){
+            g.createVertex(o);
+        }
+        List<Vertex> vertices = getJobs(o);
+        Graph tG = new Graph();
+        if (vertices.size() == 0) {
+            return g;
+        } else {
+            for (Vertex v : vertices) {
+                Vertex tV;
+                Vertex tO = g.getVertexByName(o.getName());
+                if(!g.isVertexExistsByName(v.getName())) {
+                    tV = g.createVertex(v);
+                } else {
+                    tV = g.getVertexByName(v.getName());
+                }
+                g.addDirectEdge(tO, tV);
+                buildGraph(g, tV);
+            }
+        }
+        return g;
+    }
+
     public void loadData() {
         try {
-            FileReader fr = new FileReader("/Users/tianzhuoli/IdeaProjects/leetcode_java/src/Graph/import.csv");
+            FileReader fr = new FileReader("/Users/{userName}/IdeaProjects/leetcode_java/src/Graph/import.csv");
             BufferedReader br = new BufferedReader(fr);
             String line;
             String etlJob = "";
@@ -119,23 +156,32 @@ public class Test {
 
         List<Graph> graphs = new ArrayList<>();
         Test t = new Test();
+//
+        List<Vertex> vertices = t.getVertices();
 
-        List<String> vertices = t.getVertices();
-        for (String v: vertices) {
-            Graph g = new Graph();
-            Vertex vFrom = g.createVertex(v);
-            List<String> adjJobs = t.getJobs(v);
-            for (String job: adjJobs) {
-                Vertex vTo = g.createVertex(job);
-                g.addDirectEdge(vFrom, vTo);
+        for (Vertex v: vertices) {
+            try {
+                Graph g = new Graph();
+                t.buildGraph(g, v);
+                graphs.add(g);
+            } catch (StackOverflowError e) {
+                System.out.println("OverflowVertex: " + v.getName());
             }
-            graphs.add(g);
         }
 
-        for(Graph g: graphs) {
-            if(g.getVertexSize() > 2) {
-                g.printGraph();
-                System.out.println(g.getVertexSize());
+//        for(int i=0; i<100; i++) {
+//            Graph g = new Graph();
+//            t.buildGraph(g, vertices.get(i));
+//            graphs.add(g);
+//        }
+
+        File f = new File("/Users/{userName}/IdeaProjects/leetcode_java/src/Graph/adj_table.txt");
+        Writer w = new FileWriter(f);
+
+        for(Graph tG: graphs) {
+            if(tG.getVertexSize() > 0) {
+                tG.printGraph();
+                System.out.println("Total nodes: " + tG.getVertexSize());
                 System.out.println();
             }
         }

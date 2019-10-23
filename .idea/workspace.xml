@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Graph/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Vertex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/import.csv" afterDir="false" />
+    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="added">
+      <change afterPath="$PROJECT_DIR$/src/reflection/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reflection/Banana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reflection/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reflection/ReflectClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reflection/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/hello_leetcode/HelloLeetcode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/hello_leetcode/HelloLeetcode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hello_leetcode/HelloLeetcode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hello_leetcode/HelloLeetcode.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +35,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Q5O61p7kuZ78WrU31g7tSk1aRV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -43,7 +50,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.14916585" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="Console" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -65,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test (1)">
+  <component name="RunManager" selected="Application.Test (2)">
     <configuration name="FooBar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="S1115_Print_FooBar_Alternately.FooBar" />
       <module name="leetcode" />
@@ -131,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Test" />
+    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reflection.Test" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="reflection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,10 +153,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test (2)" />
         <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.Graph" />
         <item itemvalue="Application.FooBar" />
-        <item itemvalue="Application.Solution" />
         <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
@@ -177,7 +184,7 @@
       <workItem from="1569812654137" duration="1266000" />
       <workItem from="1570495344626" duration="217000" />
       <workItem from="1570516882843" duration="4819000" />
-      <workItem from="1570581681946" duration="9108000" />
+      <workItem from="1570581681946" duration="30604000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -207,7 +214,21 @@
       <option name="project" value="LOCAL" />
       <updated>1570536522883</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="graph added">
+      <created>1571042902874</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571042902874</updated>
+    </task>
+    <task id="LOCAL-00006" summary="delete import file">
+      <created>1571042948441</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571042948441</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,10 +251,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="two problems added" />
     <MESSAGE value="add s1, s7, s13, s27," />
     <MESSAGE value="sync part of problems solved before" />
     <MESSAGE value="add 1114 and 1115" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 1114 and 1115" />
+    <MESSAGE value="graph added" />
+    <MESSAGE value="delete import file" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete import file" />
   </component>
 </project>
