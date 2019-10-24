@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/S535_Encode_and_Decode_TinyURL/Codec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S535_Encode_and_Decode_TinyURL/CodecBak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S535_Encode_and_Decode_TinyURL/Codec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S535_Encode_and_Decode_TinyURL/Codec.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +187,7 @@
       <workItem from="1569812654137" duration="1266000" />
       <workItem from="1570495344626" duration="217000" />
       <workItem from="1570516882843" duration="4819000" />
-      <workItem from="1570581681946" duration="50482000" />
+      <workItem from="1570581681946" duration="50726000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -247,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571821431345</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="solution 535 added">
+      <created>1571900836451</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571900836451</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +283,7 @@
     <MESSAGE value="graph added" />
     <MESSAGE value="delete import file" />
     <MESSAGE value="added reflection" />
-    <option name="LAST_COMMIT_MESSAGE" value="added reflection" />
+    <MESSAGE value="solution 535 added" />
+    <option name="LAST_COMMIT_MESSAGE" value="solution 535 added" />
   </component>
 </project>
