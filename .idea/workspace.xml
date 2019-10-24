@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/S535_Encode_and_Decode_TinyURL/Codec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S535_Encode_and_Decode_TinyURL/Codec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S807_Max_Increase_to_Keep_City_Skyline/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S807_Max_Increase_to_Keep_City_Skyline/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S860_Lemonade_Change/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S860_Lemonade_Change/Solution.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Codec">
+  <component name="RunManager" selected="Application.Solution (2)">
     <configuration name="Codec" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="S535_Encode_and_Decode_TinyURL.Codec" />
       <module name="leetcode" />
@@ -102,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S1221_Split_a_String_in_Balanced_Strings.Solution" />
+    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S807_Max_Increase_to_Keep_City_Skyline.Solution" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S1221_Split_a_String_in_Balanced_Strings.*" />
+          <option name="PATTERN" value="S807_Max_Increase_to_Keep_City_Skyline.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution (2)" />
         <item itemvalue="Application.Codec" />
         <item itemvalue="Application.MyBASE128" />
         <item itemvalue="Application.CodecBak" />
         <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.Solution (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +189,7 @@
       <workItem from="1569812654137" duration="1266000" />
       <workItem from="1570495344626" duration="217000" />
       <workItem from="1570516882843" duration="4819000" />
-      <workItem from="1570581681946" duration="50726000" />
+      <workItem from="1570581681946" duration="50891000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -252,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571900836451</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="solution 535 added">
+      <created>1571901074424</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1571901074424</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
