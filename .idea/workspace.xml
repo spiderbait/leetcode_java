@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Graph/adj_table.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S1290_Convert_Binary_Number_in_a_Linked_List_to_Integer/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S1290_Convert_Binary_Number_in_a_Linked_List_to_Integer/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S1290_Convert_Binary_Number_in_a_Linked_List_to_Integer/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S14_Longest_Common_Prefix/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S14_Longest_Common_Prefix/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S20_Valid_Parentheses/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S20_Valid_Parentheses/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/ByteStreamTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S14_Longest_Common_Prefix/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S14_Longest_Common_Prefix/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +185,7 @@
       <workItem from="1572241650401" duration="23000" />
       <workItem from="1574672609844" duration="1541000" />
       <workItem from="1577333180161" duration="1698000" />
-      <workItem from="1579075697973" duration="13873000" />
+      <workItem from="1579075697973" duration="19026000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -274,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571901182806</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update solutions">
+      <created>1579162147732</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1579162147732</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +303,7 @@
     <MESSAGE value="delete import file" />
     <MESSAGE value="added reflection" />
     <MESSAGE value="solution 535 added" />
-    <option name="LAST_COMMIT_MESSAGE" value="solution 535 added" />
+    <MESSAGE value="update solutions" />
+    <option name="LAST_COMMIT_MESSAGE" value="update solutions" />
   </component>
 </project>
