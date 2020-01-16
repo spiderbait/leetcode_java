@@ -2,15 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Graph/adj_table.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S1290_Convert_Binary_Number_in_a_Linked_List_to_Integer/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S1290_Convert_Binary_Number_in_a_Linked_List_to_Integer/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S1290_Convert_Binary_Number_in_a_Linked_List_to_Integer/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S14_Longest_Common_Prefix/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S14_Longest_Common_Prefix/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S20_Valid_Parentheses/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S20_Valid_Parentheses/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/ByteStreamTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S807_Max_Increase_to_Keep_City_Skyline/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S807_Max_Increase_to_Keep_City_Skyline/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S860_Lemonade_Change/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S860_Lemonade_Change/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
@@ -39,7 +67,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Graph" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.14916585" />
     <property name="settings.editor.selected.configurable" value="Console" />
@@ -64,65 +92,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution (2)">
-    <configuration name="Codec" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S535_Encode_and_Decode_TinyURL.Codec" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="S535_Encode_and_Decode_TinyURL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CodecBak" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S535_Encode_and_Decode_TinyURL.CodecBak" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="S535_Encode_and_Decode_TinyURL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyBASE128" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S535_Encode_and_Decode_TinyURL.MyBASE128" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="S535_Encode_and_Decode_TinyURL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S807_Max_Increase_to_Keep_City_Skyline.Solution" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="S807_Max_Increase_to_Keep_City_Skyline.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Test (3)">
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S938_Range_Sum_of_BST.Solution" />
+      <option name="MAIN_CLASS_NAME" value="S20_Valid_Parentheses.Solution" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S938_Range_Sum_of_BST.*" />
+          <option name="PATTERN" value="S20_Valid_Parentheses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S1114_Print_in_Order.Solution" />
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.Test" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S1114_Print_in_Order.*" />
+          <option name="PATTERN" value="S1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +120,37 @@
       </method>
     </configuration>
     <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="reflection.Test" />
+      <option name="MAIN_CLASS_NAME" value="S20_Valid_Parentheses.Test" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="reflection.*" />
+          <option name="PATTERN" value="S20_Valid_Parentheses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S14_Longest_Common_Prefix.Test" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="S14_Longest_Common_Prefix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Graph.Test" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution (2)" />
-        <item itemvalue="Application.Codec" />
-        <item itemvalue="Application.MyBASE128" />
-        <item itemvalue="Application.CodecBak" />
+        <item itemvalue="Application.Test (3)" />
         <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.Test (2)" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +191,11 @@
       <workItem from="1569812654137" duration="1266000" />
       <workItem from="1570495344626" duration="217000" />
       <workItem from="1570516882843" duration="4819000" />
-      <workItem from="1570581681946" duration="50891000" />
+      <workItem from="1570581681946" duration="52315000" />
+      <workItem from="1572241650401" duration="23000" />
+      <workItem from="1574672609844" duration="1541000" />
+      <workItem from="1577333180161" duration="1698000" />
+      <workItem from="1579075697973" duration="13873000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -261,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571901074424</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="solution 535 added">
+      <created>1571901182806</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1571901182806</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

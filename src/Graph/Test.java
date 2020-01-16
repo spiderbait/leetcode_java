@@ -12,7 +12,7 @@ public class Test {
     String driver = "com.mysql.cj.jdbc.Driver";
     String url = "jdbc:mysql://localhost:3306/test";
     String user = "root";
-    String password = "pass";
+    String password = "ltz5623459";
     String tableName = "etl_job_dependency";
 
     Test() {
@@ -175,7 +175,7 @@ public class Test {
 //            graphs.add(g);
 //        }
 
-        File f = new File("/Users/{userName}/IdeaProjects/leetcode_java/src/Graph/adj_table.txt");
+        File f = new File("/Users/tianzhuoli/IdeaProjects/leetcode_java/src/Graph/adj_table.txt");
         Writer w = new FileWriter(f);
 
         for(Graph tG: graphs) {
