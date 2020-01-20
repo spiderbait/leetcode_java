@@ -1,5 +1,7 @@
 package S27_Remove_Element;
 
+import java.util.Arrays;
+
 public class Solution {
     //import java.util.ArrayList;
 //import java.util.List;
@@ -29,5 +31,23 @@ public class Solution {
 //	}
 //
 //}
+    public int removeElement(int[] nums, int val) {
+        String numsStr = Arrays.toString(nums);
+        numsStr = numsStr.replace("[", "");
+        numsStr = numsStr.replace("]", "");
+        String[] numsStrSplit = numsStr.split(", ");
+        System.out.println(numsStr);
+        for (String s: numsStrSplit) {
+            System.out.println(s);
+
+        }
+        return 1;
+    }
+
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        int[] nums = new int[]{1, 3, 6, 8, 10};
+        s.removeElement(nums, 1);
+    }
 
 }
