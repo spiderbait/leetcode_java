@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
+    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="update solutions">
+      <change afterPath="$PROJECT_DIR$/src/S21_Merge_Two_Sorted_Lists/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S21_Merge_Two_Sorted_Lists/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S14_Longest_Common_Prefix/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S14_Longest_Common_Prefix/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +58,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Graph" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.14916585" />
@@ -82,7 +84,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test (3)">
+  <component name="RunManager" selected="Application.Solution (1)">
+    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S21_Merge_Two_Sorted_Lists.Solution" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="S21_Merge_Two_Sorted_Lists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="S20_Valid_Parentheses.Solution" />
       <module name="leetcode" />
@@ -135,26 +150,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Graph.Test" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Test (3)" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.Test (2)" />
         <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +187,8 @@
       <workItem from="1572241650401" duration="23000" />
       <workItem from="1574672609844" duration="1541000" />
       <workItem from="1577333180161" duration="1698000" />
-      <workItem from="1579075697973" duration="19026000" />
+      <workItem from="1579075697973" duration="23148000" />
+      <workItem from="1579484248052" duration="6746000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -271,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579162147732</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update solutions">
+      <created>1579172002007</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1579172002007</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
