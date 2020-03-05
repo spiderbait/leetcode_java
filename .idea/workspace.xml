@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S1295_Find_Numbers_with_Even_Number_of_Digits/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S1295_Find_Numbers_with_Even_Number_of_Digits/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S1342_Number_of_Steps_to_Reduce_a_Number_to_Zero/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S1342_Number_of_Steps_to_Reduce_a_Number_to_Zero/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/MyLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/magic_cube_core/MagicCubeCore.java" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,36 +32,43 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1Q5O61p7kuZ78WrU31g7tSk1aRV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565928244453" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/work/lib/log4j-core-2.12.1.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.FooBar">
+  <component name="RunManager" selected="Application.Test (2)">
     <configuration name="FooBar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="S1115_Print_FooBar_Alternately.FooBar" />
       <module name="leetcode" />
@@ -67,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloLeetcode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hello_leetcode.HelloLeetcode" />
+    <configuration name="MyLogger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.MyLogger" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hello_leetcode.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +121,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Test" />
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S1342_Number_of_Steps_to_Reduce_a_Number_to_Zero.Test" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="S1342_Number_of_Steps_to_Reduce_a_Number_to_Zero.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S1295_Find_Numbers_with_Even_Number_of_Digits.Test" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="S1295_Find_Numbers_with_Even_Number_of_Digits.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test (2)" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.MyLogger" />
         <item itemvalue="Application.FooBar" />
         <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.HelloLeetcode" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +181,15 @@
       <workItem from="1570495344626" duration="217000" />
       <workItem from="1570516882843" duration="4717000" />
       <workItem from="1570537214460" duration="917000" />
-      <workItem from="1571666997717" duration="603000" />
+      <workItem from="1571666997717" duration="712000" />
+      <workItem from="1574344680480" duration="606000" />
+      <workItem from="1574781888832" duration="75000" />
+      <workItem from="1574781999350" duration="13000" />
+      <workItem from="1575548534089" duration="11000" />
+      <workItem from="1575548985933" duration="534000" />
+      <workItem from="1575549711542" duration="4021000" />
+      <workItem from="1577703067324" duration="185000" />
+      <workItem from="1583413015409" duration="4706000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -183,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570538787689</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="sync part of problems solved before">
+      <created>1571669747426</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571669747426</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,5 +250,27 @@
     <MESSAGE value="add s1, s7, s13, s27," />
     <MESSAGE value="sync part of problems solved before" />
     <option name="LAST_COMMIT_MESSAGE" value="sync part of problems solved before" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1902" height="371" key="GridCell.Tab.0.bottom" timestamp="1583415761299">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1902" height="371" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1583415761299" />
+    <state width="1902" height="371" key="GridCell.Tab.0.center" timestamp="1583415761299">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1902" height="371" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1583415761299" />
+    <state width="1902" height="371" key="GridCell.Tab.0.left" timestamp="1583415761299">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1902" height="371" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1583415761299" />
+    <state width="1902" height="371" key="GridCell.Tab.0.right" timestamp="1583415761299">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1902" height="371" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1583415761299" />
+    <state x="893" y="721" key="search.everywhere.popup" timestamp="1583415694953">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="893" y="721" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1583415694953" />
   </component>
 </project>
