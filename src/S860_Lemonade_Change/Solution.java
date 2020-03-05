@@ -3,7 +3,7 @@ package S860_Lemonade_Change;
 
 public class Solution {
 
-    public boolean lemonadeChange(int[] bills){
+    private boolean lemonadeChange(int[] bills){
 
         int fiveCount = 0;
         int tenCount = 0;
@@ -75,7 +75,6 @@ public class Solution {
 //	}
 //
 //	public static void main(String[] args) {
-//		// TODO Auto-generated method stub
 //		ListNode node = new ListNode(1);
 //		ListNode head = node;
 //		ListNode rst;
@@ -106,7 +105,6 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
 //			int[] bills = {5, 5, 5, 10, 20};
         int[] bills = {5,5,10,20,5,5,5,5,5,5,5,5,5,10,5,5,20,5,20,5};
 //			int[] bills = {10, 10};
