@@ -30,24 +30,47 @@ public class Solution {
 //		System.out.println(removeElement(nums, 2));
 //	}
 //
-//}
-    public int removeElement(int[] nums, int val) {
-        String numsStr = Arrays.toString(nums);
-        numsStr = numsStr.replace("[", "");
-        numsStr = numsStr.replace("]", "");
-        String[] numsStrSplit = numsStr.split(", ");
-        System.out.println(numsStr);
-        for (String s: numsStrSplit) {
-            System.out.println(s);
+////}
+//    public int removeElement(int[] nums, int val) {
+//        String numsStr = Arrays.toString(nums);
+//        numsStr = numsStr.replace("[", "");
+//        numsStr = numsStr.replace("]", "");
+//        String[] numsStrSplit = numsStr.split(", ");
+//        System.out.println(numsStr);
+//        for (String s: numsStrSplit) {
+//            System.out.println(s);
+//
+//        }
+//        return 1;
+//    }
 
+    public int removeElement(int[] nums, int val) {
+        int ceilPtr = nums.length - 1;
+        int i = 0;
+        while(i < nums.length && ceilPtr >= i) {
+            if (nums[i] == val) {
+                int t = nums[i];
+                nums[i] = nums[ceilPtr];
+                nums[ceilPtr] = t;
+                ceilPtr --;
+            } else {
+                i ++;
+            }
         }
-        return 1;
+        return ceilPtr + 1;
+    }
+
+    public void printArray(int[] nums) {
+        for (int n: nums) {
+            System.out.print(n + "\t");
+        }
     }
 
     public static void main(String[] args) {
         Solution s = new Solution();
-        int[] nums = new int[]{1, 3, 6, 8, 10};
-        s.removeElement(nums, 1);
+        int[] nums = new int[]{3};
+        System.out.println(s.removeElement(nums, 3));
+        s.printArray(nums);
     }
 
 }
