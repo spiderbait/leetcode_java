@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/KMP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S28_Implement_strStr/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S28_Implement_strStr/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/KMP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/KMP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,22 +62,9 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KMP">
+  <component name="RunManager" selected="Application.Solution">
     <configuration name="KMP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.KMP" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyLogger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.MyLogger" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -94,6 +82,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S28_Implement_strStr.Solution" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="S28_Implement_strStr.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution" />
         <item itemvalue="Application.KMP" />
         <item itemvalue="Application.Rotation" />
         <item itemvalue="Application.Test (2)" />
         <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.MyLogger" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +174,9 @@
       <workItem from="1584695030897" duration="634000" />
       <workItem from="1584965650255" duration="3832000" />
       <workItem from="1585031176907" duration="315000" />
-      <workItem from="1585046390305" duration="3461000" />
+      <workItem from="1585046390305" duration="4114000" />
+      <workItem from="1585062062117" duration="6000" />
+      <workItem from="1585138006023" duration="5874000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -224,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585031306906</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="KMP implements added">
+      <created>1585061119863</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585061119863</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,37 +257,58 @@
     <MESSAGE value="two problems added" />
     <MESSAGE value="add s1, s7, s13, s27," />
     <MESSAGE value="sync part of problems solved before" />
-    <option name="LAST_COMMIT_MESSAGE" value="sync part of problems solved before" />
+    <MESSAGE value="KMP implements added" />
+    <option name="LAST_COMMIT_MESSAGE" value="KMP implements added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1006" y="462" key="CommitChangelistDialog2" timestamp="1585031306095">
+    <state x="639" y="319" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585062008763">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1006" y="462" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1585031306095" />
-    <state width="1872" height="319" key="GridCell.Tab.0.bottom" timestamp="1585060807762">
+    <state x="639" y="319" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1585062008763" />
+    <state x="1006" y="462" key="CommitChangelistDialog2" timestamp="1585061119295">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="319" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1585060807762" />
-    <state width="1872" height="319" key="GridCell.Tab.0.center" timestamp="1585060807762">
+    <state x="1006" y="462" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1585061119295" />
+    <state width="1872" height="319" key="GridCell.Tab.0.bottom" timestamp="1585148212624">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="319" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1585060807762" />
-    <state width="1872" height="319" key="GridCell.Tab.0.left" timestamp="1585060807762">
+    <state width="1872" height="319" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1585148212624" />
+    <state width="1872" height="319" key="GridCell.Tab.0.center" timestamp="1585148212623">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="319" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1585060807762" />
-    <state width="1872" height="319" key="GridCell.Tab.0.right" timestamp="1585060807762">
+    <state width="1872" height="319" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1585148212623" />
+    <state width="1872" height="319" key="GridCell.Tab.0.left" timestamp="1585148212623">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="319" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1585060807762" />
+    <state width="1872" height="319" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1585148212623" />
+    <state width="1872" height="319" key="GridCell.Tab.0.right" timestamp="1585148212623">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1872" height="319" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1585148212623" />
+    <state width="1872" height="394" key="GridCell.Tab.1.bottom" timestamp="1585146181104">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1872" height="394" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1585146181104" />
+    <state width="1872" height="394" key="GridCell.Tab.1.center" timestamp="1585146181104">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1872" height="394" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1585146181104" />
+    <state width="1872" height="394" key="GridCell.Tab.1.left" timestamp="1585146181104">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1872" height="394" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1585146181104" />
+    <state width="1872" height="394" key="GridCell.Tab.1.right" timestamp="1585146181104">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1872" height="394" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1585146181104" />
     <state x="1000" y="441" key="MultipleFileMergeDialog" timestamp="1585052062816">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1000" y="441" key="MultipleFileMergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1585052062816" />
-    <state x="880" y="458" key="Vcs.Push.Dialog.v2" timestamp="1585031316848">
+    <state x="880" y="458" key="Vcs.Push.Dialog.v2" timestamp="1585061129178">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="880" y="458" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1585031316848" />
+    <state x="880" y="458" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1585061129178" />
     <state x="1227" y="782" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585052045944">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

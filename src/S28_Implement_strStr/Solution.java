@@ -30,21 +30,50 @@ public class Solution {
 //    }
 
     public int strStr(String haystack, String needle) {
-        return 0;
+        int i = 0, j = 0;
+        int[] next = getNextArray(needle);
+
+        while (i < haystack.length() && j < needle.length()) {
+            if (haystack.charAt(i) == needle.charAt(j)) {
+                i ++;
+                j ++;
+            } else {
+                i = next[j];
+                j = 0;
+            }
+        }
+
+        if (j >= needle.length()) {
+            return i - needle.length();
+        } else {
+            return -1;
+        }
+    }
+
+    public int[] getNextArray(String subString) {
+        int[] next = new int[subString.length()];
+        next[0] = 0;
+        int j = 0, k = 0;
+
+        while (j < subString.length() - 1) {
+            if (k == 0 || subString.charAt(j) == subString.charAt(k)) {
+                k ++;
+                j ++;
+                next[j] = k;
+            } else {
+                k = next[k];
+            }
+        }
+        return next;
     }
 
     public static void main(String[] args) {
-        String haystack = "aaaa";
-        String needle = "aaa";
+        String haystack = "hello";
+        String needle = "ll";
 
         Solution s = new Solution();
-//        int r = s.strStr(haystack, needle);
-//        System.out.print(r);
+        int r = s.strStr(haystack, needle);
+        System.out.print(r);
 
-        for (int i=0; i<10; i++) {
-            for (int j=0; j<10; j++) {
-
-            }
-        }
     }
 }
