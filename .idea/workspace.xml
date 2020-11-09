@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
+    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="S28 update">
+      <change afterPath="$PROJECT_DIR$/src/S116_Populating_Next_Right_Pointers_in_Each_Node/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S116_Populating_Next_Right_Pointers_in_Each_Node/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S209_Minimum_Size_Subarray_Sum/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S28_Implement_strStr/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S28_Implement_strStr/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/KMP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/KMP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +39,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -55,14 +56,14 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="Application.Solution (2)">
     <configuration name="KMP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.KMP" />
       <module name="leetcode" />
@@ -76,12 +77,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Rotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Rotation" />
+    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S116_Populating_Next_Right_Pointers_in_Each_Node.Solution" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="S116_Populating_Next_Right_Pointers_in_Each_Node.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S209_Minimum_Size_Subarray_Sum.Solution" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="S209_Minimum_Size_Subarray_Sum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S1342_Number_of_Steps_to_Reduce_a_Number_to_Zero.Test" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S1342_Number_of_Steps_to_Reduce_a_Number_to_Zero.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,29 +129,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S1295_Find_Numbers_with_Even_Number_of_Digits.Test" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="S1295_Find_Numbers_with_Even_Number_of_Digits.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution (2)" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.KMP" />
-        <item itemvalue="Application.Rotation" />
-        <item itemvalue="Application.Test (2)" />
-        <item itemvalue="Application.Test (1)" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -176,7 +189,16 @@
       <workItem from="1585031176907" duration="315000" />
       <workItem from="1585046390305" duration="4114000" />
       <workItem from="1585062062117" duration="6000" />
-      <workItem from="1585138006023" duration="5874000" />
+      <workItem from="1585138006023" duration="6291000" />
+      <workItem from="1585148582045" duration="35000" />
+      <workItem from="1585148625830" duration="33000" />
+      <workItem from="1585233137877" duration="40000" />
+      <workItem from="1586958509817" duration="819000" />
+      <workItem from="1586959586091" duration="3559000" />
+      <workItem from="1588943284553" duration="977000" />
+      <workItem from="1592316357095" duration="981000" />
+      <workItem from="1592916003264" duration="285000" />
+      <workItem from="1604926954612" duration="3944000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -234,88 +256,85 @@
       <option name="project" value="LOCAL" />
       <updated>1585061119863</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="S28 update">
+      <created>1585148305167</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585148305167</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="two problems added" />
     <MESSAGE value="add s1, s7, s13, s27," />
     <MESSAGE value="sync part of problems solved before" />
     <MESSAGE value="KMP implements added" />
-    <option name="LAST_COMMIT_MESSAGE" value="KMP implements added" />
+    <MESSAGE value="S28 update" />
+    <option name="LAST_COMMIT_MESSAGE" value="S28 update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="639" y="319" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585062008763">
+    <state width="933" height="319" key="GridCell.Tab.0.bottom" timestamp="1604930505716">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="639" y="319" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1585062008763" />
-    <state x="1006" y="462" key="CommitChangelistDialog2" timestamp="1585061119295">
+    <state width="933" height="319" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604930505716" />
+    <state width="933" height="319" key="GridCell.Tab.0.center" timestamp="1604930505715">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1006" y="462" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1585061119295" />
-    <state width="1872" height="319" key="GridCell.Tab.0.bottom" timestamp="1585148212624">
+    <state width="933" height="319" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604930505715" />
+    <state width="933" height="319" key="GridCell.Tab.0.left" timestamp="1604930505715">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="319" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1585148212624" />
-    <state width="1872" height="319" key="GridCell.Tab.0.center" timestamp="1585148212623">
+    <state width="933" height="319" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604930505715" />
+    <state width="933" height="319" key="GridCell.Tab.0.right" timestamp="1604930505715">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="319" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1585148212623" />
-    <state width="1872" height="319" key="GridCell.Tab.0.left" timestamp="1585148212623">
+    <state width="933" height="319" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604930505715" />
+    <state width="936" height="394" key="GridCell.Tab.1.bottom" timestamp="1604930349426">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="319" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1585148212623" />
-    <state width="1872" height="319" key="GridCell.Tab.0.right" timestamp="1585148212623">
+    <state width="936" height="394" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604930349426" />
+    <state width="936" height="394" key="GridCell.Tab.1.center" timestamp="1604930349426">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="319" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1585148212623" />
-    <state width="1872" height="394" key="GridCell.Tab.1.bottom" timestamp="1585146181104">
+    <state width="936" height="394" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604930349426" />
+    <state width="936" height="394" key="GridCell.Tab.1.left" timestamp="1604930349426">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="394" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1585146181104" />
-    <state width="1872" height="394" key="GridCell.Tab.1.center" timestamp="1585146181104">
+    <state width="936" height="394" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604930349426" />
+    <state width="936" height="394" key="GridCell.Tab.1.right" timestamp="1604930349426">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="394" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1585146181104" />
-    <state width="1872" height="394" key="GridCell.Tab.1.left" timestamp="1585146181104">
+    <state width="936" height="394" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604930349426" />
+    <state x="1299" y="561" width="979" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604930235672">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="394" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1585146181104" />
-    <state width="1872" height="394" key="GridCell.Tab.1.right" timestamp="1585146181104">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1872" height="394" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1585146181104" />
-    <state x="1000" y="441" key="MultipleFileMergeDialog" timestamp="1585052062816">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1000" y="441" key="MultipleFileMergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1585052062816" />
-    <state x="880" y="458" key="Vcs.Push.Dialog.v2" timestamp="1585061129178">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="880" y="458" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1585061129178" />
-    <state x="1227" y="782" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585052045944">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1227" y="782" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1585052045944" />
-    <state x="893" y="721" key="search.everywhere.popup" timestamp="1583415694953">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="893" y="721" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1583415694953" />
+    <state x="1299" y="561" width="979" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2560.1400@0.0.2560.1400" timestamp="1604930235672" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
