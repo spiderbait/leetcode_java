@@ -1,0 +1,1255 @@
+Index: src/test/TestFields.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/TestFields.java	(date 1605848368308)
++++ src/test/TestFields.java	(date 1605848368308)
+@@ -0,0 +1,30 @@
++package test;
++
++import java.lang.reflect.Field;
++
++public class TestFields {
++    private int a;
++    private int b;
++
++    public TestFields(int a, int b) {
++        this.a = a;
++        this.b = b;
++    }
++
++    public int getResult() {
++        return a + b;
++    }
++
++    public static void main(String[] args) {
++        Field[] declaredFields = TestFields.class.getDeclaredFields();
++        Field[] fields = TestFields.class.getFields();
++
++        for (Field f: declaredFields) {
++            System.out.println("1 - " + f.getType().toString());
++        }
++
++        for (Field f: fields) {
++            System.out.println("2 - " + f.getType().toString());
++        }
++    }
++}
+Index: src/S27_Remove_Element/Solution.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package S27_Remove_Element;\n\nimport java.util.Arrays;\n\npublic class Solution {\n    //import java.util.ArrayList;\n//import java.util.List;\n//\n//public class Solution_27_Remove_Element {\n//\n//\tpublic static int removeElement(int[] nums, int val) {\n//\n//\t\tint newLength = nums.length;\n//\t\tList<int> list = new ArrayList<int>();\n//\n//\t\tfor(int i=0; i<nums.length; i++){\n//\t\t\tif(nums[i] != val){\n//\t\t\t\tlist.add(nums[i]);\n//\t\t\t}\n//\t\t}\n//\t\tnums = (Integer[])list.toArray();\n//\n//\t        return newLength;\n//\t}\n//\n//\tpublic static void main(String[] args){\n//\n////\t\tint[] nums = {3,2,2,3};\t\t//val = 3, length = 2\n//\t\tint[] nums = {0,1,2,2,3,0,4,2};\t\t//val = 2, length = 5\n//\t\tSystem.out.println(removeElement(nums, 2));\n//\t}\n//\n////}\n//    public int removeElement(int[] nums, int val) {\n//        String numsStr = Arrays.toString(nums);\n//        numsStr = numsStr.replace(\"[\", \"\");\n//        numsStr = numsStr.replace(\"]\", \"\");\n//        String[] numsStrSplit = numsStr.split(\", \");\n//        System.out.println(numsStr);\n//        for (String s: numsStrSplit) {\n//            System.out.println(s);\n//\n//        }\n//        return 1;\n//    }\n\n    public int removeElement(int[] nums, int val) {\n        int ceilPtr = nums.length - 1;\n        int i = 0;\n        while(i < nums.length && ceilPtr >= i) {\n            if (nums[i] == val) {\n                int t = nums[i];\n                nums[i] = nums[ceilPtr];\n                nums[ceilPtr] = t;\n                ceilPtr --;\n            } else {\n                i ++;\n            }\n        }\n        return ceilPtr + 1;\n    }\n\n    public void printArray(int[] nums) {\n        for (int n: nums) {\n            System.out.print(n + \"\\t\");\n        }\n    }\n\n    public static void main(String[] args) {\n        Solution s = new Solution();\n        int[] nums = new int[]{3};\n        System.out.println(s.removeElement(nums, 3));\n        s.printArray(nums);\n    }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/S27_Remove_Element/Solution.java	(revision 0c55ff492a6114ef23c5f6b9b47ebef5734a23de)
++++ src/S27_Remove_Element/Solution.java	(date 1605848368303)
+@@ -1,5 +1,6 @@
+ package S27_Remove_Element;
+ 
++import java.lang.reflect.Field;
+ import java.util.Arrays;
+ 
+ public class Solution {
+Index: src/S35_Search_Insert_Position/Solution.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/S35_Search_Insert_Position/Solution.java	(date 1605848368304)
++++ src/S35_Search_Insert_Position/Solution.java	(date 1605848368304)
+@@ -0,0 +1,24 @@
++package S35_Search_Insert_Position;
++
++public class Solution {
++    public int searchInsert(int[] nums, int target) {
++        for(int i=0; i<nums.length; i++) {
++            if (nums[i] >= target) {
++                return i;
++            }
++        }
++        return nums.length;
++    }
++
++    public static void main(String[] args) {
++        int[] nums = {1, 3, 5, 6};
++//        int n = 5;
++//        int n = 2;
++//        int n = 7;
++        int n = 0;
++
++        Solution s = new Solution();
++        int i = s.searchInsert(nums, n);
++        System.out.println(i);
++    }
++}
+Index: src/test/CommandTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/CommandTest.java	(date 1605848368306)
++++ src/test/CommandTest.java	(date 1605848368306)
+@@ -0,0 +1,40 @@
++package test;
++
++import java.io.BufferedReader;
++import java.io.IOException;
++import java.io.InputStreamReader;
++import java.util.ArrayList;
++import java.util.List;
++
++public class CommandTest {
++    public List<String> exec(String cmd) {
++        Process process = null;
++        List<String> processList = new ArrayList<>();
++
++        try {
++            process = Runtime.getRuntime().exec(cmd);
++            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
++            String line = "";
++            while ((line = reader.readLine()) != null) {
++//                System.out.println(line);
++                processList.add(line);
++            }
++            reader.close();
++        } catch (IOException e) {
++            e.printStackTrace();
++        }
++        return processList;
++    }
++
++    public void printResult(List<String> processList) {
++        for (String line: processList) {
++            System.out.println(line);
++        }
++    }
++
++    public static void main(String[] args) {
++        CommandTest ct = new CommandTest();
++        String cmd = "ls -p /";
++        ct.printResult(ct.exec(cmd));
++    }
++}
+Index: src/test/MemTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/MemTest.java	(date 1605848368307)
++++ src/test/MemTest.java	(date 1605848368307)
+@@ -0,0 +1,13 @@
++package test;
++
++import java.util.HashMap;
++
++public class MemTest {
++    public static void main(String[] args) {
++        HashMap<String, String> map = new HashMap<>();
++        map.put("a", "1");
++        map = new HashMap<>();
++        map.get("abd");
++
++    }
++}
+Index: src/test/StaticTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/StaticTest.java	(date 1605848368308)
++++ src/test/StaticTest.java	(date 1605848368308)
+@@ -0,0 +1,22 @@
++package test;
++
++public class StaticTest {
++
++    private static String str = "this is static string";
++
++    public void popString() {
++        System.out.println(str);
++    }
++
++    public void pushString(String s) {
++        str = s;
++    }
++
++    public static void main(String[] args) {
++        String s = "hello";
++        StaticTest st = new StaticTest();
++        st.popString();
++        st.pushString(s);
++        st.popString();
++    }
++}
+Index: src/test/CmdTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/CmdTest.java	(date 1605848368306)
++++ src/test/CmdTest.java	(date 1605848368306)
+@@ -0,0 +1,59 @@
++package test;
++
++import java.io.*;
++import java.util.HashMap;
++
++public class CmdTest {
++    public String loadStream(InputStream in) throws IOException{
++        String line = "";
++        StringBuilder sb = new StringBuilder();
++        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
++        while((line = reader.readLine()) != null) {
++            sb.append(line).append('\n');
++        }
++        return sb.toString();
++    }
++
++    public HashMap<String, Object> exec(String cmd) throws IOException{
++        HashMap<String, Object> responseJson = new HashMap<>();
++        Process process = Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", cmd});
++        InputStream is = process.getInputStream();
++        InputStream es = process.getErrorStream();
++
++        String standard_output = loadStream(is);
++        String error_output = loadStream(es);
++
++        responseJson.put("cmd", cmd);
++        responseJson.put("standard_output", standard_output);
++        responseJson.put("error_output", error_output);
++
++        return responseJson;
++    }
++
++    public static void main(String[] args) throws IOException {
++        CmdTest cmdTest = new CmdTest();
++//        String script = "cat /Users/tianzhuoli/Desktop/dev/cmd_test/go.sh && echo 'a'; && ";
++//        String date = "20200416";
++//        String cmd = script + date;
++//        String cmd = "ls /";
++//        String cmd = "sh /Users/tianzhuoli/Desktop/dev/cmd_test/go.sh 20200220";
++//        String cmd = "cat>/Users/tianzhuoli/Desktop/dev/cmd_test/a<<EOF\n" +
++//                "这是一个由shell创建的文件\n" +
++//                "this is a file created by shell.\n" +
++//                "we want to makeddd a good world.\n";
++
++
++        String from = "/Users/tianzhuoli/Desktop/dev/cmd_test/text_*";
++        String to = "/Users/tianzhuoli/Desktop/dev/cmd_test/to/";
++        String cmd = "cp -r " + from + " " + to;
++
++        HashMap<String, Object> result = cmdTest.exec(cmd);
++
++        String is = (String) result.get("standard_output");
++        String es = (String) result.get("error_output");
++
++        System.out.println("COMMAND: " + cmd);
++        System.out.println("STD: " + is);
++        System.out.println("ERR: " + es);
++    }
++}
+Index: src/test/LambdaFunction.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/LambdaFunction.java	(date 1605848368307)
++++ src/test/LambdaFunction.java	(date 1605848368307)
+@@ -0,0 +1,21 @@
++package test;
++
++import java.util.concurrent.Callable;
++
++public class LambdaFunction {
++
++    public String hello(String text) {
++        return "Hello " + text;
++    }
++
++    public void go() throws Exception {
++        Callable<String> integerCallable = () -> hello("haha");
++        String s = integerCallable.call();
++        System.out.println(s);
++    }
++
++    public static void main(String[] args) throws Exception {
++        LambdaFunction lf = new LambdaFunction();
++        lf.go();
++    }
++}
+Index: src/test/AccumlateSumTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/AccumlateSumTest.java	(date 1605848368305)
++++ src/test/AccumlateSumTest.java	(date 1605848368305)
+@@ -0,0 +1,66 @@
++package test;
++
++import java.text.SimpleDateFormat;
++import java.util.ArrayList;
++import java.util.Date;
++import java.util.HashMap;
++import java.util.List;
++
++public class AccumlateSumTest {
++
++    private HashMap<String, String> process(HashMap<String, String> raw) {
++        HashMap<String, String> map = new HashMap<>();
++        SimpleDateFormat df = new SimpleDateFormat("HH");
++        int maxSum = 0;
++
++        for (int i=0; i<24; i++) {
++            if (i > Integer.parseInt(df.format(new Date()))) {
++                map.put(String.valueOf(i), "0");
++            } else {
++                if (raw.containsKey(String.valueOf(i))) {
++                    map.put(String.valueOf(i), raw.get(String.valueOf(i)));
++                    if (Integer.parseInt(raw.get(String.valueOf(i))) > maxSum) {
++                        maxSum = Integer.parseInt(raw.get(String.valueOf(i)));
++                    }
++                } else {
++                    map.put(String.valueOf(i), String.valueOf(maxSum));
++                }
++            }
++        }
++        return map;
++    }
++
++    private HashMap<String, String> listToHashMap(List<String> list) {
++        HashMap<String, String> map = new HashMap<>();
++
++        for (String line: list) {
++            map.put(String.valueOf(Integer.parseInt(line.split(",")[0])), line.split(",")[1]);
++        }
++
++        return map;
++    }
++
++    public void print(HashMap<String, String> map) {
++        for (int i=0; i<24; i++) {
++            System.out.println(i + " - " + map.get(String.valueOf(i)));
++        }
++    }
++
++    public static void main(String[] args) {
++        List<String> mockData = new ArrayList<>();
++        mockData.add("00,1");
++        mockData.add("04,3");
++        mockData.add("05,6");
++        mockData.add("10,9");
++        mockData.add("11,174");
++        mockData.add("12,313");
++        mockData.add("13,327");
++        mockData.add("14,329");
++        mockData.add("15,331");
++        mockData.add("16,336");
++
++        AccumlateSumTest ast = new AccumlateSumTest();
++        ast.print(ast.process(ast.listToHashMap(mockData)));
++
++    }
++}
+Index: src/test/HdfsChartInfo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/HdfsChartInfo.java	(date 1605848368306)
++++ src/test/HdfsChartInfo.java	(date 1605848368306)
+@@ -0,0 +1,47 @@
++package test;
++
++public class HdfsChartInfo {
++    private String system;
++    private String dbName;
++    private String todayPlus;
++    private String yesterdayPlus;
++
++    public HdfsChartInfo(String system, String dbName, String todayPlus, String yesterdayPlus) {
++        this.system = system;
++        this.dbName = dbName;
++        this.todayPlus = todayPlus;
++        this.yesterdayPlus = yesterdayPlus;
++    }
++
++    public String getSystem() {
++        return system;
++    }
++
++    public void setSystem(String system) {
++        this.system = system;
++    }
++
++    public String getDbName() {
++        return dbName;
++    }
++
++    public void setDbName(String dbName) {
++        this.dbName = dbName;
++    }
++
++    public String getTodayPlus() {
++        return todayPlus;
++    }
++
++    public void setTodayPlus(String todayPlus) {
++        this.todayPlus = todayPlus;
++    }
++
++    public String getYesterdayPlus() {
++        return yesterdayPlus;
++    }
++
++    public void setYesterdayPlus(String yesterdayPlus) {
++        this.yesterdayPlus = yesterdayPlus;
++    }
++}
+\ No newline at end of file
+Index: src/test/ATMTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/ATMTest.java	(date 1605848368304)
++++ src/test/ATMTest.java	(date 1605848368304)
+@@ -0,0 +1,99 @@
++package test;
++
++import java.text.DecimalFormat;
++import java.util.HashMap;
++
++public class ATMTest {
++    //维护映射关系库
++    private static HashMap<String,String> map = new HashMap<String,String>(){
++        {
++            put("test", "测试0");
++            put("test1","测试1");
++            put("test2","测试2");
++            put("test3","测试3");
++            put("test4","测试4");
++        }
++    };
++
++    private static String pathString = "/user/hive/warehouse";
++
++    //分别存放今日的文件夹大小和昨日的文件夹大小
++    private static double yesterdayFileSize = 0.0;
++    private static double todayFileSize = 0.0;
++
++    private static double FileSizePlus = 0.0;
++    private static String FileSizePlusString = "0.00";
++    private static double PlusRate = 0.0;
++    private static String PlusRateString = "0.00";
++
++
++
++    private static double[] yesterdaySize = new double[map.keySet().size()];
++    private static double[] todaySize = new double[map.keySet().size()];
++
++    private static double[] todayPlus = new double[map.keySet().size()];
++    private static String[] todayPlusString = new String[map.keySet().size()];
++    private static String[] yesterdayPlusString = new String[map.keySet().size()];
++
++    private HashMap<String,HdfsChartInfo> result = new HashMap<>();
++
++    //@Scheduled(cron = "1 0 0 * * ?")
++//    @Scheduled(cron = "*/10 * * * * ?")
++//    public void sync() throws URISyntaxException, IOException, InterruptedException {
++//        SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss");
++//        System.out.println(sdf.format(new Date()) + " Scheduled task HdfsFileSizePlusCache.sync() called.");
++//
++//    }
++
++    private void sub_process() throws Exception {
++        int i = 0;
++        for (String s : map.keySet()) {
++
++            yesterdayPlusString[i] = todayPlusString[i];
++            yesterdaySize[i] = todaySize[i];
++            todaySize[i] = 1.0;
++            todayPlus[i] = todaySize[i] - yesterdaySize[i];
++
++            DecimalFormat df = new DecimalFormat("0.00");
++            todayPlusString[i] = df.format(todayPlus[i]);
++
++            result.put(s,new HdfsChartInfo(map.get(s), s, todayPlusString[i], yesterdayPlusString[i]));
++            i++;
++        }
++    }
++
++    private void process(String pathString) throws Exception {
++        yesterdayFileSize = todayFileSize;
++
++        todayFileSize = 1.;
++
++        FileSizePlus = todayFileSize - yesterdayFileSize;
++        if(yesterdayFileSize != 0.0){
++            PlusRate = 100*FileSizePlus/yesterdayFileSize;
++        }
++        DecimalFormat df = new DecimalFormat("0.00");
++        FileSizePlusString = df.format(FileSizePlus);
++        PlusRateString = df.format(PlusRate);
++    }
++
++    private void test() {
++        for (String s : result.keySet()) {
++            System.out.println("key: " + s + ", value_dbname: " + result.get(s).getDbName() + ", value_system: " +
++                    result.get(s).getSystem() + ", value_" + result.get(s).getTodayPlus());
++        }
++    }
++
++
++    public static String getFileSizePlusString() {return FileSizePlusString;}
++    public static String getPlusRateString() {return PlusRateString;}
++    public static String[] getTodayPlus() { return todayPlusString; }
++    public static String[] getYesterdayPlus() { return yesterdayPlusString; }
++//    public static HashMap<String, HdfsChartInfo> getResult() { return result; }
++    public static void main(String[] args) throws Exception{
++        ATMTest at = new ATMTest();
++
++        at.process(pathString);
++        at.sub_process();
++        at.test();
++    }
++}
+Index: src/test/AssertTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/AssertTest.java	(date 1605848368305)
++++ src/test/AssertTest.java	(date 1605848368305)
+@@ -0,0 +1,7 @@
++package test;
++
++public class AssertTest {
++    public static void main(String[] args) {
++
++    }
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"dd089b80-92c8-4b0d-add1-b08a7c2f093c\" name=\"Default Changelist\" comment=\"S28 update\">\n      <change afterPath=\"$PROJECT_DIR$/src/S116_Populating_Next_Right_Pointers_in_Each_Node/Node.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/S116_Populating_Next_Right_Pointers_in_Each_Node/Solution.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/S209_Minimum_Size_Subarray_Sum/Solution.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/test/Test.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/Test.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"DefaultGradleProjectSettings\">\n    <option name=\"testRunner\" value=\"GRADLE\" />\n    <option name=\"delegatedBuild\" value=\"true\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"UPDATE_TYPE\" value=\"MERGE\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"importingSettings\">\n      <MavenImportingSettings>\n        <option name=\"vmOptionsForImporter\" value=\"-Xmx768m\" />\n      </MavenImportingSettings>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"1Q5O61p7kuZ78WrU31g7tSk1aRV\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"Downloaded.Files.Path.Enabled\" value=\"true\" />\n    <property name=\"Repository.Attach.Annotations\" value=\"false\" />\n    <property name=\"Repository.Attach.JavaDocs\" value=\"false\" />\n    <property name=\"Repository.Attach.Sources\" value=\"false\" />\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\n    <property name=\"com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp\" value=\"1565928244453\" />\n    <property name=\"last_opened_file_path\" value=\"$USER_HOME$/Desktop/work/lib/log4j-core-2.12.1.jar!/\" />\n    <property name=\"nodejs_interpreter_path.stuck_in_default_project\" value=\"undefined stuck path\" />\n    <property name=\"nodejs_npm_path_reset_for_default_project\" value=\"true\" />\n    <property name=\"project.structure.last.edited\" value=\"Global Libraries\" />\n    <property name=\"project.structure.proportion\" value=\"0.15\" />\n    <property name=\"project.structure.side.proportion\" value=\"0.2\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"settings.github\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Application.Solution (2)\">\n    <configuration name=\"KMP\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"test.KMP\" />\n      <module name=\"leetcode\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"test.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Solution (1)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"S116_Populating_Next_Right_Pointers_in_Each_Node.Solution\" />\n      <module name=\"leetcode\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"S116_Populating_Next_Right_Pointers_in_Each_Node.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Solution (2)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"S209_Minimum_Size_Subarray_Sum.Solution\" />\n      <module name=\"leetcode\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"S209_Minimum_Size_Subarray_Sum.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Solution\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"S28_Implement_strStr.Solution\" />\n      <module name=\"leetcode\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"S28_Implement_strStr.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Test\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"test.Test\" />\n      <module name=\"leetcode\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"test.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"ArquillianJUnit\" factoryName=\"\" nameIsGenerated=\"true\">\n      <option name=\"arquillianRunConfiguration\">\n        <value>\n          <option name=\"containerStateName\" value=\"\" />\n        </value>\n      </option>\n      <option name=\"TEST_OBJECT\" value=\"class\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Solution (2)\" />\n        <item itemvalue=\"Application.Test\" />\n        <item itemvalue=\"Application.Solution (1)\" />\n        <item itemvalue=\"Application.Solution\" />\n        <item itemvalue=\"Application.KMP\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"dd089b80-92c8-4b0d-add1-b08a7c2f093c\" name=\"Default Changelist\" comment=\"\" />\n      <created>1565706955070</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1565706955070</updated>\n      <workItem from=\"1565706956290\" duration=\"874000\" />\n      <workItem from=\"1565709757746\" duration=\"83000\" />\n      <workItem from=\"1565831118081\" duration=\"7330000\" />\n      <workItem from=\"1565933021692\" duration=\"10000\" />\n      <workItem from=\"1567056812505\" duration=\"2288000\" />\n      <workItem from=\"1567502151957\" duration=\"824000\" />\n      <workItem from=\"1568208207230\" duration=\"1767000\" />\n      <workItem from=\"1568254087449\" duration=\"243000\" />\n      <workItem from=\"1568614614538\" duration=\"301000\" />\n      <workItem from=\"1569719145720\" duration=\"598000\" />\n      <workItem from=\"1569812654137\" duration=\"1266000\" />\n      <workItem from=\"1570495344626\" duration=\"217000\" />\n      <workItem from=\"1570516882843\" duration=\"4717000\" />\n      <workItem from=\"1570537214460\" duration=\"917000\" />\n      <workItem from=\"1571666997717\" duration=\"712000\" />\n      <workItem from=\"1574344680480\" duration=\"606000\" />\n      <workItem from=\"1574781888832\" duration=\"75000\" />\n      <workItem from=\"1574781999350\" duration=\"13000\" />\n      <workItem from=\"1575548534089\" duration=\"11000\" />\n      <workItem from=\"1575548985933\" duration=\"534000\" />\n      <workItem from=\"1575549711542\" duration=\"4021000\" />\n      <workItem from=\"1577703067324\" duration=\"185000\" />\n      <workItem from=\"1583413015409\" duration=\"4926000\" />\n      <workItem from=\"1584695030897\" duration=\"634000\" />\n      <workItem from=\"1584965650255\" duration=\"3832000\" />\n      <workItem from=\"1585031176907\" duration=\"315000\" />\n      <workItem from=\"1585046390305\" duration=\"4114000\" />\n      <workItem from=\"1585062062117\" duration=\"6000\" />\n      <workItem from=\"1585138006023\" duration=\"6291000\" />\n      <workItem from=\"1585148582045\" duration=\"35000\" />\n      <workItem from=\"1585148625830\" duration=\"33000\" />\n      <workItem from=\"1585233137877\" duration=\"40000\" />\n      <workItem from=\"1586958509817\" duration=\"819000\" />\n      <workItem from=\"1586959586091\" duration=\"3559000\" />\n      <workItem from=\"1588943284553\" duration=\"977000\" />\n      <workItem from=\"1592316357095\" duration=\"981000\" />\n      <workItem from=\"1592916003264\" duration=\"285000\" />\n      <workItem from=\"1604926954612\" duration=\"3944000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"two problems added\">\n      <created>1565864362109</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1565864362110</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"add s1, s7, s13, s27,\">\n      <created>1567514175642</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1567514175642</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"sync part of problems solved before\">\n      <created>1568210991249</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1568210991249</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"sync part of problems solved before\">\n      <created>1570538787689</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1570538787689</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"sync part of problems solved before\">\n      <created>1571669747426</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1571669747426</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"sync part of problems solved before\">\n      <created>1583419567811</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1583419567811</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"sync part of problems solved before\">\n      <created>1585031306906</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1585031306906</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"KMP implements added\">\n      <created>1585061119863</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1585061119863</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"S28 update\">\n      <created>1585148305167</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1585148305167</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"10\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"two problems added\" />\n    <MESSAGE value=\"add s1, s7, s13, s27,\" />\n    <MESSAGE value=\"sync part of problems solved before\" />\n    <MESSAGE value=\"KMP implements added\" />\n    <MESSAGE value=\"S28 update\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"S28 update\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state width=\"933\" height=\"319\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1604930505716\">\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1400\" />\n    </state>\n    <state width=\"933\" height=\"319\" key=\"GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400\" timestamp=\"1604930505716\" />\n    <state width=\"933\" height=\"319\" key=\"GridCell.Tab.0.center\" timestamp=\"1604930505715\">\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1400\" />\n    </state>\n    <state width=\"933\" height=\"319\" key=\"GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400\" timestamp=\"1604930505715\" />\n    <state width=\"933\" height=\"319\" key=\"GridCell.Tab.0.left\" timestamp=\"1604930505715\">\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1400\" />\n    </state>\n    <state width=\"933\" height=\"319\" key=\"GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400\" timestamp=\"1604930505715\" />\n    <state width=\"933\" height=\"319\" key=\"GridCell.Tab.0.right\" timestamp=\"1604930505715\">\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1400\" />\n    </state>\n    <state width=\"933\" height=\"319\" key=\"GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400\" timestamp=\"1604930505715\" />\n    <state width=\"936\" height=\"394\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1604930349426\">\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1400\" />\n    </state>\n    <state width=\"936\" height=\"394\" key=\"GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400\" timestamp=\"1604930349426\" />\n    <state width=\"936\" height=\"394\" key=\"GridCell.Tab.1.center\" timestamp=\"1604930349426\">\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1400\" />\n    </state>\n    <state width=\"936\" height=\"394\" key=\"GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400\" timestamp=\"1604930349426\" />\n    <state width=\"936\" height=\"394\" key=\"GridCell.Tab.1.left\" timestamp=\"1604930349426\">\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1400\" />\n    </state>\n    <state width=\"936\" height=\"394\" key=\"GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400\" timestamp=\"1604930349426\" />\n    <state width=\"936\" height=\"394\" key=\"GridCell.Tab.1.right\" timestamp=\"1604930349426\">\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1400\" />\n    </state>\n    <state width=\"936\" height=\"394\" key=\"GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400\" timestamp=\"1604930349426\" />\n    <state x=\"1299\" y=\"561\" width=\"979\" height=\"629\" key=\"com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2\" timestamp=\"1604930235672\">\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1400\" />\n    </state>\n    <state x=\"1299\" y=\"561\" width=\"979\" height=\"629\" key=\"com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2560.1400@0.0.2560.1400\" timestamp=\"1604930235672\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <breakpoint enabled=\"true\" type=\"java-exception\">\n          <properties class=\"java.lang.ArrayIndexOutOfBoundsException\" package=\"java.lang\" />\n          <option name=\"timeStamp\" value=\"1\" />\n        </breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 0c55ff492a6114ef23c5f6b9b47ebef5734a23de)
++++ .idea/workspace.xml	(date 1606223165607)
+@@ -1,18 +1,53 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="S28 update">
+-      <change afterPath="$PROJECT_DIR$/src/S116_Populating_Next_Right_Pointers_in_Each_Node/Node.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/S116_Populating_Next_Right_Pointers_in_Each_Node/Solution.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/S209_Minimum_Size_Subarray_Sum/Solution.java" afterDir="false" />
++    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
++      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/a" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/date.txt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/S35_Search_Insert_Position/Solution.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/ATMTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/AccumlateSumTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/AssertTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/CmdTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/CommandTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/CrontabSim.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/HdfsChartInfo.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/LambdaFunction.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/ListMergeTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/MemTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/ObjectTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/SplitAndFilter.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/StaticTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/TestFields.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/S27_Remove_Element/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S27_Remove_Element/Solution.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
++  <component name="CodeStyleSettingsInfer">
++    <option name="done" value="true" />
++  </component>
++  <component name="ComposerSettings">
++    <execution />
++  </component>
++  <component name="DatabaseView">
++    <option name="SHOW_INTERMEDIATE" value="true" />
++    <option name="GROUP_DATA_SOURCES" value="true" />
++    <option name="GROUP_SCHEMA" value="true" />
++    <option name="GROUP_CONTENTS" value="false" />
++    <option name="SORT_POSITIONED" value="false" />
++    <option name="SHOW_EMPTY_GROUPS" value="false" />
++    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
++    <option name="HIDDEN_KINDS">
++      <set />
++    </option>
++    <expand />
++    <select />
++  </component>
+   <component name="DefaultGradleProjectSettings">
+     <option name="testRunner" value="GRADLE" />
+     <option name="delegatedBuild" value="true" />
+@@ -26,46 +61,48 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-    <option name="UPDATE_TYPE" value="MERGE" />
+   </component>
+-  <component name="MavenImportPreferences">
+-    <option name="importingSettings">
+-      <MavenImportingSettings>
+-        <option name="vmOptionsForImporter" value="-Xmx768m" />
+-      </MavenImportingSettings>
+-    </option>
++  <component name="ProjectCodeStyleSettingsMigration">
++    <option name="version" value="1" />
+   </component>
+   <component name="ProjectId" id="1Q5O61p7kuZ78WrU31g7tSk1aRV" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent">
+-    <property name="Downloaded.Files.Path.Enabled" value="true" />
+-    <property name="Repository.Attach.Annotations" value="false" />
+-    <property name="Repository.Attach.JavaDocs" value="false" />
+-    <property name="Repository.Attach.Sources" value="false" />
++    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
++    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565928244453" />
+-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/work/lib/log4j-core-2.12.1.jar!/" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Graph" />
+     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+-    <property name="project.structure.last.edited" value="Global Libraries" />
++    <property name="nodejs_package_manager_path" value="npm" />
++    <property name="project.structure.last.edited" value="Modules" />
+     <property name="project.structure.proportion" value="0.15" />
+-    <property name="project.structure.side.proportion" value="0.2" />
+-    <property name="settings.editor.selected.configurable" value="settings.github" />
++    <property name="project.structure.side.proportion" value="0.14916585" />
++    <property name="settings.editor.selected.configurable" value="Console" />
+   </component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/src" />
+     </key>
++    <key name="ExtractSuperBase.RECENT_KEYS">
++      <recent name="test" />
++    </key>
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/src/Graph" />
++    </key>
+   </component>
+-  <component name="RunManager" selected="Application.Solution (2)">
+-    <configuration name="KMP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="test.KMP" />
++  <component name="RunManager" selected="Application.CrontabSim">
++    <configuration name="ATMTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="test.ATMTest" />
+       <module name="leetcode" />
+       <extension name="coverage">
+         <pattern>
+@@ -77,12 +114,12 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="S116_Populating_Next_Right_Pointers_in_Each_Node.Solution" />
++    <configuration name="CrontabSim" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="test.CrontabSim" />
+       <module name="leetcode" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="S116_Populating_Next_Right_Pointers_in_Each_Node.*" />
++          <option name="PATTERN" value="test.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -90,12 +127,12 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="S209_Minimum_Size_Subarray_Sum.Solution" />
++    <configuration name="LambdaFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="test.LambdaFunction" />
+       <module name="leetcode" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="S209_Minimum_Size_Subarray_Sum.*" />
++          <option name="PATTERN" value="test.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -103,12 +140,12 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="S28_Implement_strStr.Solution" />
++    <configuration name="ObjectTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="test.ObjectTest" />
+       <module name="leetcode" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="S28_Implement_strStr.*" />
++          <option name="PATTERN" value="test.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -116,8 +153,8 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="test.Test" />
++    <configuration name="SplitAndFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="test.SplitAndFilter" />
+       <module name="leetcode" />
+       <extension name="coverage">
+         <pattern>
+@@ -129,24 +166,13 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+-      <option name="arquillianRunConfiguration">
+-        <value>
+-          <option name="containerStateName" value="" />
+-        </value>
+-      </option>
+-      <option name="TEST_OBJECT" value="class" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Application.Solution (2)" />
+-        <item itemvalue="Application.Test" />
+-        <item itemvalue="Application.Solution (1)" />
+-        <item itemvalue="Application.Solution" />
+-        <item itemvalue="Application.KMP" />
++        <item itemvalue="Application.CrontabSim" />
++        <item itemvalue="Application.SplitAndFilter" />
++        <item itemvalue="Application.ObjectTest" />
++        <item itemvalue="Application.ATMTest" />
++        <item itemvalue="Application.LambdaFunction" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -173,32 +199,39 @@
+       <workItem from="1569719145720" duration="598000" />
+       <workItem from="1569812654137" duration="1266000" />
+       <workItem from="1570495344626" duration="217000" />
+-      <workItem from="1570516882843" duration="4717000" />
+-      <workItem from="1570537214460" duration="917000" />
+-      <workItem from="1571666997717" duration="712000" />
+-      <workItem from="1574344680480" duration="606000" />
+-      <workItem from="1574781888832" duration="75000" />
+-      <workItem from="1574781999350" duration="13000" />
+-      <workItem from="1575548534089" duration="11000" />
+-      <workItem from="1575548985933" duration="534000" />
+-      <workItem from="1575549711542" duration="4021000" />
+-      <workItem from="1577703067324" duration="185000" />
+-      <workItem from="1583413015409" duration="4926000" />
+-      <workItem from="1584695030897" duration="634000" />
+-      <workItem from="1584965650255" duration="3832000" />
+-      <workItem from="1585031176907" duration="315000" />
+-      <workItem from="1585046390305" duration="4114000" />
+-      <workItem from="1585062062117" duration="6000" />
+-      <workItem from="1585138006023" duration="6291000" />
+-      <workItem from="1585148582045" duration="35000" />
+-      <workItem from="1585148625830" duration="33000" />
+-      <workItem from="1585233137877" duration="40000" />
+-      <workItem from="1586958509817" duration="819000" />
+-      <workItem from="1586959586091" duration="3559000" />
+-      <workItem from="1588943284553" duration="977000" />
+-      <workItem from="1592316357095" duration="981000" />
+-      <workItem from="1592916003264" duration="285000" />
+-      <workItem from="1604926954612" duration="3944000" />
++      <workItem from="1570516882843" duration="4819000" />
++      <workItem from="1570581681946" duration="52315000" />
++      <workItem from="1572241650401" duration="23000" />
++      <workItem from="1574672609844" duration="1541000" />
++      <workItem from="1577333180161" duration="1698000" />
++      <workItem from="1579075697973" duration="23148000" />
++      <workItem from="1579484248052" duration="10994000" />
++      <workItem from="1579877863093" duration="191000" />
++      <workItem from="1581928157622" duration="95000" />
++      <workItem from="1584695068206" duration="4141000" />
++      <workItem from="1584925909185" duration="19099000" />
++      <workItem from="1585750022765" duration="1903000" />
++      <workItem from="1586265288051" duration="4970000" />
++      <workItem from="1586912415193" duration="255000" />
++      <workItem from="1587118730498" duration="13887000" />
++      <workItem from="1587885057138" duration="804000" />
++      <workItem from="1588035951352" duration="1978000" />
++      <workItem from="1588726770974" duration="12665000" />
++      <workItem from="1591361124415" duration="1362000" />
++      <workItem from="1591595816887" duration="432000" />
++      <workItem from="1591857292024" duration="598000" />
++      <workItem from="1593525858201" duration="653000" />
++      <workItem from="1595577206840" duration="3181000" />
++      <workItem from="1597048513240" duration="2610000" />
++      <workItem from="1597284030681" duration="75000" />
++      <workItem from="1597284120993" duration="6000" />
++      <workItem from="1598406741796" duration="735000" />
++      <workItem from="1600152595992" duration="202000" />
++      <workItem from="1602592060122" duration="7130000" />
++      <workItem from="1604991151966" duration="129000" />
++      <workItem from="1605834291845" duration="3423000" />
++      <workItem from="1606146178015" duration="9000" />
++      <workItem from="1606222861792" duration="304000" />
+     </task>
+     <task id="LOCAL-00001" summary="two problems added">
+       <created>1565864362109</created>
+@@ -221,53 +254,112 @@
+       <option name="project" value="LOCAL" />
+       <updated>1568210991249</updated>
+     </task>
+-    <task id="LOCAL-00004" summary="sync part of problems solved before">
+-      <created>1570538787689</created>
++    <task id="LOCAL-00004" summary="add 1114 and 1115">
++      <created>1570536522882</created>
+       <option name="number" value="00004" />
+       <option name="presentableId" value="LOCAL-00004" />
+       <option name="project" value="LOCAL" />
+-      <updated>1570538787689</updated>
++      <updated>1570536522883</updated>
+     </task>
+-    <task id="LOCAL-00005" summary="sync part of problems solved before">
+-      <created>1571669747426</created>
++    <task id="LOCAL-00005" summary="graph added">
++      <created>1571042902874</created>
+       <option name="number" value="00005" />
+       <option name="presentableId" value="LOCAL-00005" />
+       <option name="project" value="LOCAL" />
+-      <updated>1571669747426</updated>
++      <updated>1571042902874</updated>
+     </task>
+-    <task id="LOCAL-00006" summary="sync part of problems solved before">
+-      <created>1583419567811</created>
++    <task id="LOCAL-00006" summary="delete import file">
++      <created>1571042948441</created>
+       <option name="number" value="00006" />
+       <option name="presentableId" value="LOCAL-00006" />
+       <option name="project" value="LOCAL" />
+-      <updated>1583419567811</updated>
++      <updated>1571042948441</updated>
+     </task>
+-    <task id="LOCAL-00007" summary="sync part of problems solved before">
+-      <created>1585031306906</created>
++    <task id="LOCAL-00007" summary="added reflection">
++      <created>1571815268757</created>
+       <option name="number" value="00007" />
+       <option name="presentableId" value="LOCAL-00007" />
+       <option name="project" value="LOCAL" />
+-      <updated>1585031306906</updated>
++      <updated>1571815268757</updated>
+     </task>
+-    <task id="LOCAL-00008" summary="KMP implements added">
+-      <created>1585061119863</created>
++    <task id="LOCAL-00008" summary="added reflection">
++      <created>1571821431345</created>
+       <option name="number" value="00008" />
+       <option name="presentableId" value="LOCAL-00008" />
+       <option name="project" value="LOCAL" />
+-      <updated>1585061119863</updated>
++      <updated>1571821431345</updated>
+     </task>
+-    <task id="LOCAL-00009" summary="S28 update">
+-      <created>1585148305167</created>
++    <task id="LOCAL-00009" summary="solution 535 added">
++      <created>1571900836451</created>
+       <option name="number" value="00009" />
+       <option name="presentableId" value="LOCAL-00009" />
+       <option name="project" value="LOCAL" />
+-      <updated>1585148305167</updated>
++      <updated>1571900836451</updated>
+     </task>
+-    <option name="localTasksCounter" value="10" />
++    <task id="LOCAL-00010" summary="solution 535 added">
++      <created>1571901074424</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1571901074424</updated>
++    </task>
++    <task id="LOCAL-00011" summary="solution 535 added">
++      <created>1571901182806</created>
++      <option name="number" value="00011" />
++      <option name="presentableId" value="LOCAL-00011" />
++      <option name="project" value="LOCAL" />
++      <updated>1571901182806</updated>
++    </task>
++    <task id="LOCAL-00012" summary="update solutions">
++      <created>1579162147732</created>
++      <option name="number" value="00012" />
++      <option name="presentableId" value="LOCAL-00012" />
++      <option name="project" value="LOCAL" />
++      <updated>1579162147732</updated>
++    </task>
++    <task id="LOCAL-00013" summary="update solutions">
++      <created>1579172002007</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL-00013" />
++      <option name="project" value="LOCAL" />
++      <updated>1579172002007</updated>
++    </task>
++    <task id="LOCAL-00014" summary="update solutions 20200120">
++      <created>1579508928747</created>
++      <option name="number" value="00014" />
++      <option name="presentableId" value="LOCAL-00014" />
++      <option name="project" value="LOCAL" />
++      <updated>1579508928747</updated>
++    </task>
++    <task id="LOCAL-00015" summary="update solutions 20200120 - 1">
++      <created>1579511446754</created>
++      <option name="number" value="00015" />
++      <option name="presentableId" value="LOCAL-00015" />
++      <option name="project" value="LOCAL" />
++      <updated>1579511446754</updated>
++    </task>
++    <task id="LOCAL-00016" summary="update solutions 20200120 - 1">
++      <created>1584954953347</created>
++      <option name="number" value="00016" />
++      <option name="presentableId" value="LOCAL-00016" />
++      <option name="project" value="LOCAL" />
++      <updated>1584954953347</updated>
++    </task>
++    <task id="LOCAL-00017" summary="update solutions 20200324 - 1">
++      <created>1585041656148</created>
++      <option name="number" value="00017" />
++      <option name="presentableId" value="LOCAL-00017" />
++      <option name="project" value="LOCAL" />
++      <updated>1585041656148</updated>
++    </task>
++    <option name="localTasksCounter" value="18" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
++  </component>
++  <component name="UnknownFeatures">
++    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+     <option name="TAB_STATES">
+@@ -282,59 +374,19 @@
+     <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="VcsManagerConfiguration">
++    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+     <MESSAGE value="two problems added" />
+     <MESSAGE value="add s1, s7, s13, s27," />
+     <MESSAGE value="sync part of problems solved before" />
+-    <MESSAGE value="KMP implements added" />
+-    <MESSAGE value="S28 update" />
+-    <option name="LAST_COMMIT_MESSAGE" value="S28 update" />
+-  </component>
+-  <component name="WindowStateProjectService">
+-    <state width="933" height="319" key="GridCell.Tab.0.bottom" timestamp="1604930505716">
+-      <screen x="0" y="0" width="2560" height="1400" />
+-    </state>
+-    <state width="933" height="319" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604930505716" />
+-    <state width="933" height="319" key="GridCell.Tab.0.center" timestamp="1604930505715">
+-      <screen x="0" y="0" width="2560" height="1400" />
+-    </state>
+-    <state width="933" height="319" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604930505715" />
+-    <state width="933" height="319" key="GridCell.Tab.0.left" timestamp="1604930505715">
+-      <screen x="0" y="0" width="2560" height="1400" />
+-    </state>
+-    <state width="933" height="319" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604930505715" />
+-    <state width="933" height="319" key="GridCell.Tab.0.right" timestamp="1604930505715">
+-      <screen x="0" y="0" width="2560" height="1400" />
+-    </state>
+-    <state width="933" height="319" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604930505715" />
+-    <state width="936" height="394" key="GridCell.Tab.1.bottom" timestamp="1604930349426">
+-      <screen x="0" y="0" width="2560" height="1400" />
+-    </state>
+-    <state width="936" height="394" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604930349426" />
+-    <state width="936" height="394" key="GridCell.Tab.1.center" timestamp="1604930349426">
+-      <screen x="0" y="0" width="2560" height="1400" />
+-    </state>
+-    <state width="936" height="394" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604930349426" />
+-    <state width="936" height="394" key="GridCell.Tab.1.left" timestamp="1604930349426">
+-      <screen x="0" y="0" width="2560" height="1400" />
+-    </state>
+-    <state width="936" height="394" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604930349426" />
+-    <state width="936" height="394" key="GridCell.Tab.1.right" timestamp="1604930349426">
+-      <screen x="0" y="0" width="2560" height="1400" />
+-    </state>
+-    <state width="936" height="394" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604930349426" />
+-    <state x="1299" y="561" width="979" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604930235672">
+-      <screen x="0" y="0" width="2560" height="1400" />
+-    </state>
+-    <state x="1299" y="561" width="979" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2560.1400@0.0.2560.1400" timestamp="1604930235672" />
+-  </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <breakpoint enabled="true" type="java-exception">
+-          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+-          <option name="timeStamp" value="1" />
+-        </breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
++    <MESSAGE value="add 1114 and 1115" />
++    <MESSAGE value="graph added" />
++    <MESSAGE value="delete import file" />
++    <MESSAGE value="added reflection" />
++    <MESSAGE value="solution 535 added" />
++    <MESSAGE value="update solutions" />
++    <MESSAGE value="update solutions 20200120" />
++    <MESSAGE value="update solutions 20200120 - 1" />
++    <MESSAGE value="update solutions 20200324 - 1" />
++    <option name="LAST_COMMIT_MESSAGE" value="update solutions 20200324 - 1" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/test/ListMergeTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/ListMergeTest.java	(date 1605848368307)
++++ src/test/ListMergeTest.java	(date 1605848368307)
+@@ -0,0 +1,18 @@
++package test;
++
++import java.util.LinkedList;
++import java.util.List;
++
++public class ListMergeTest {
++    public static void main(String[] args) {
++        List<String> list = new LinkedList<>();
++        list.add("TASK03");
++        list.add("TASK04");
++        list.add(0, "TASK02");
++        list.add(0, "TASK01");
++
++        for (String s : list) {
++            System.out.println(s);
++        }
++    }
++}
+Index: src/test/ObjectTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/ObjectTest.java	(date 1605848368307)
++++ src/test/ObjectTest.java	(date 1605848368307)
+@@ -0,0 +1,38 @@
++package test;
++
++import java.util.HashMap;
++
++public class ObjectTest {
++    private int v;
++
++    public int getV() {
++        return v;
++    }
++
++    public void setV(int v) {
++        this.v = v;
++    }
++
++    public static void main(String[] args) {
++//        Integer a = 200;
++//        String s = "asd";
++//        HashMap<String, Integer> map = new HashMap<>();
++//        map.put("test", a);
++//        System.out.println(map.get("test"));
++//        a = 1;
++//        System.out.println(map.get("test"));
++//
++//        ObjectTest ot = new ObjectTest();
++//        ot.setV(1);
++//        HashMap<String, ObjectTest> pam = new HashMap<>();
++//        pam.put("test", ot);
++//        System.out.println(pam.get("test").getV());
++//        ot.setV(2);
++//        System.out.println(pam.get("test").getV());
++
++        final String s;
++        s = "a";
++    }
++
++
++}
+Index: src/test/SplitAndFilter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/SplitAndFilter.java	(date 1605848368308)
++++ src/test/SplitAndFilter.java	(date 1605848368308)
+@@ -0,0 +1,22 @@
++package test;
++
++import java.util.HashMap;
++
++public class SplitAndFilter {
++
++
++
++    public static void main(String[] args) {
++
++        HashMap<String, String> mapOne = new HashMap<>();
++        HashMap<String, String> mapTwo = new HashMap<>();
++
++        for (int i=0; i<4; i++) {
++            mapOne.put(String.valueOf(i), "0");
++            mapTwo.put(String.valueOf(i), "0");
++        }
++
++
++
++    }
++}
+Index: .idea/codeStyles/codeStyleConfig.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/codeStyles/codeStyleConfig.xml	(date 1605848368301)
++++ .idea/codeStyles/codeStyleConfig.xml	(date 1605848368301)
+@@ -0,0 +1,5 @@
++<component name="ProjectCodeStyleConfiguration">
++  <state>
++    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default" />
++  </state>
++</component>
+\ No newline at end of file
+Index: src/test/CrontabSim.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/CrontabSim.java	(date 1605848368306)
++++ src/test/CrontabSim.java	(date 1605848368306)
+@@ -0,0 +1,85 @@
++package test;
++
++import java.util.HashMap;
++
++public class CrontabSim {
++    private HashMap<String, String> mapToday = new HashMap<>();
++    private HashMap<String, String> mapYesterday = new HashMap<>();
++
++    public void init() {
++        for (int i = 0; i < 4; i++) {
++            mapToday.put(String.valueOf(i), "0");
++            mapYesterday.put(String.valueOf(i), "0");
++        }
++    }
++
++    public void sync() {
++        mapToday.put("2", "100");
++    }
++
++    public void clear() {
++        mapYesterday = mapToday;
++        for (int i = 0; i < 4; i++) {
++            mapToday.put(String.valueOf(i), "0");
++        }
++    }
++
++    public void print(HashMap<String, String> map) {
++        StringBuilder sb = new StringBuilder();
++        sb.append("{");
++        int i = 0;
++        for (String s: map.keySet()) {
++            sb.append(s).append(":").append(map.get(s));
++            if (i == map.keySet().size() - 1){
++                sb.append("}");
++            } else {
++                sb.append(",").append("\n");
++            }
++            i++;
++        }
++        System.out.println(sb.toString());
++        System.out.println();
++    }
++
++    public void mapCopy(HashMap<String, String> oldMap, HashMap<String, String> newMap) {
++        for (String key: oldMap.keySet()) {
++            newMap.put(key, oldMap.get(key));
++        }
++    }
++
++    public HashMap<String, String> getMapToday() {
++        return mapToday;
++    }
++
++    public HashMap<String, String> getMapYesterday() {
++        return mapYesterday;
++    }
++
++    public static void main(String[] args) {
++        CrontabSim cs = new CrontabSim();
++//        System.out.println(">>init:");
++//        cs.init();
++//        cs.print(cs.getMapToday());
++//        cs.print(cs.getMapYesterday());
++//        System.out.println(">>sync:");
++//        cs.sync();
++//        cs.print(cs.getMapToday());
++//        cs.print(cs.getMapYesterday());
++//        System.out.println(">>clear:");
++//        cs.clear();
++//        cs.print(cs.getMapToday());
++//        cs.print(cs.getMapYesterday());
++
++        HashMap<String, String> map = new HashMap<>();
++        HashMap<String, String> tMap = new HashMap<>();
++        map.put("a", "b");
++//        tMap = map;
++        cs.mapCopy(map, tMap);
++        cs.print(map);
++        cs.print(tMap);
++        map.put("b", "c");
++        cs.print(map);
++        cs.print(tMap);
++
++    }
++}
+Index: a
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- a	(date 1605848368302)
++++ a	(date 1605848368302)
+@@ -0,0 +1,1 @@
++asd
+Index: date.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- date.txt	(date 1605848368302)
++++ date.txt	(date 1605848368302)
+@@ -0,0 +1,1 @@
++Mon Apr 20 14:44:37 CST 2020
