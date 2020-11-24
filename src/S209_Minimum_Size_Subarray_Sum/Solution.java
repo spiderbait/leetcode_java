@@ -38,7 +38,8 @@ class Solution {
     public static void main(String[] args) {
 //        int[] nums = {2, 3, 1, 2, 4, 3};
         int[] nums = {1, 2, 3, 4, 5};
-        int sum = 11;
+        
+        int sum = 12;
         Solution s = new Solution();
         int l = s.minSubArrayLen(sum, nums);
         System.out.println("l = " + l);
