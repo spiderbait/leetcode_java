@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="S28 update">
-      <change afterPath="$PROJECT_DIR$/src/S116_Populating_Next_Right_Pointers_in_Each_Node/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S116_Populating_Next_Right_Pointers_in_Each_Node/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S209_Minimum_Size_Subarray_Sum/Solution.java" afterDir="false" />
+    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S209_Minimum_Size_Subarray_Sum/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S209_Minimum_Size_Subarray_Sum/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +184,10 @@
       <workItem from="1588943284553" duration="977000" />
       <workItem from="1592316357095" duration="981000" />
       <workItem from="1592916003264" duration="285000" />
-      <workItem from="1604926954612" duration="3944000" />
+      <workItem from="1604926954612" duration="4933000" />
+      <workItem from="1605012554229" duration="596000" />
+      <workItem from="1605185590375" duration="1463000" />
+      <workItem from="1605190570745" duration="596000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -252,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585148305167</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="20201109 update">
+      <created>1604931475174</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604931475174</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,45 +283,58 @@
     <MESSAGE value="sync part of problems solved before" />
     <MESSAGE value="KMP implements added" />
     <MESSAGE value="S28 update" />
-    <option name="LAST_COMMIT_MESSAGE" value="S28 update" />
+    <MESSAGE value="20201109 update" />
+    <option name="LAST_COMMIT_MESSAGE" value="20201109 update" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="933" height="319" key="GridCell.Tab.0.bottom" timestamp="1604930505716">
+    <state x="1138" y="245" key="CommitChangelistDialog2" timestamp="1604931474416">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="933" height="319" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604930505716" />
-    <state width="933" height="319" key="GridCell.Tab.0.center" timestamp="1604930505715">
+    <state x="1138" y="245" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1604931474416" />
+    <state width="936" height="394" key="GridCell.Tab.0.bottom" timestamp="1604933151813">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="933" height="319" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604930505715" />
-    <state width="933" height="319" key="GridCell.Tab.0.left" timestamp="1604930505715">
+    <state width="936" height="394" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604933151813" />
+    <state width="936" height="394" key="GridCell.Tab.0.center" timestamp="1604933151813">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="933" height="319" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604930505715" />
-    <state width="933" height="319" key="GridCell.Tab.0.right" timestamp="1604930505715">
+    <state width="936" height="394" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604933151813" />
+    <state width="936" height="394" key="GridCell.Tab.0.left" timestamp="1604933151813">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="933" height="319" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604930505715" />
-    <state width="936" height="394" key="GridCell.Tab.1.bottom" timestamp="1604930349426">
+    <state width="936" height="394" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604933151813" />
+    <state width="936" height="394" key="GridCell.Tab.0.right" timestamp="1604933151813">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="936" height="394" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604930349426" />
-    <state width="936" height="394" key="GridCell.Tab.1.center" timestamp="1604930349426">
+    <state width="936" height="394" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604933151813" />
+    <state width="936" height="394" key="GridCell.Tab.1.bottom" timestamp="1604933151813">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="936" height="394" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604930349426" />
-    <state width="936" height="394" key="GridCell.Tab.1.left" timestamp="1604930349426">
+    <state width="936" height="394" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604933151813" />
+    <state width="936" height="394" key="GridCell.Tab.1.center" timestamp="1604933151813">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="936" height="394" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604930349426" />
-    <state width="936" height="394" key="GridCell.Tab.1.right" timestamp="1604930349426">
+    <state width="936" height="394" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604933151813" />
+    <state width="936" height="394" key="GridCell.Tab.1.left" timestamp="1604933151813">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="936" height="394" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604930349426" />
+    <state width="936" height="394" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604933151813" />
+    <state width="936" height="394" key="GridCell.Tab.1.right" timestamp="1604933151813">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="936" height="394" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604933151813" />
+    <state x="1111" y="407" key="Vcs.Push.Dialog.v2" timestamp="1604931487599">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1111" y="407" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604931487599" />
     <state x="1299" y="561" width="979" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604930235672">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1299" y="561" width="979" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2560.1400@0.0.2560.1400" timestamp="1604930235672" />
+    <state x="1325" y="432" key="new project wizard" timestamp="1605186512527">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1325" y="432" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1605186512527" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
