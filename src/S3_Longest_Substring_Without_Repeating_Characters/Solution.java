@@ -23,7 +23,7 @@ class Solution {
 
     public int lengthOfLongestSubstring(String s) {
         // 如果是空的，就没必要判断了
-        if(s == ""){
+        if(s.equals("")){
             return 0;
         }
         int curLength = 0; // 记录以当前字符的上一个字符为结尾的最长不重复子字符串
@@ -53,8 +53,6 @@ class Solution {
         return maxLength;
     }
 
-
-
     public static void main(String[] args) {
         Solution s = new Solution();
         String s1 = "abcabcbb";
@@ -81,6 +79,5 @@ class Solution {
         System.out.println(s.lengthOfLongestSubstring(s7));
         System.out.println("-?-");
         System.out.println(s.lengthOfLongestSubstring(s8));
-
     }
 }

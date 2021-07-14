@@ -287,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604931475174</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="20210714 sync">
+      <created>1626259415953</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626259415953</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,29 +319,42 @@
     <MESSAGE value="KMP implements added" />
     <MESSAGE value="S28 update" />
     <MESSAGE value="20201109 update" />
-    <option name="LAST_COMMIT_MESSAGE" value="20201109 update" />
+    <MESSAGE value="20210714 sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="20210714 sync" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="695" height="180" key="GridCell.Tab.0.bottom" timestamp="1626246868546">
+    <state x="285" y="25" key="CommitChangelistDialog2" timestamp="1626259415688">
       <screen x="0" y="25" width="1440" height="821" />
     </state>
+    <state x="285" y="25" key="CommitChangelistDialog2/0.25.1440.821@0.25.1440.821" timestamp="1626259415688" />
+    <state width="1398" height="101" key="GridCell.Tab.0.bottom" timestamp="1626260125531">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state width="1398" height="101" key="GridCell.Tab.0.bottom/0.25.1440.814@0.25.1440.814" timestamp="1626260125531" />
     <state width="695" height="255" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1626246308318" />
-    <state width="695" height="180" key="GridCell.Tab.0.bottom/0.25.1440.821@0.25.1440.821" timestamp="1626246868546" />
-    <state width="695" height="180" key="GridCell.Tab.0.center" timestamp="1626246868545">
-      <screen x="0" y="25" width="1440" height="821" />
+    <state width="1398" height="221" key="GridCell.Tab.0.bottom/0.25.1440.821@0.25.1440.821" timestamp="1626259578878" />
+    <state width="1398" height="101" key="GridCell.Tab.0.center" timestamp="1626260125530">
+      <screen x="0" y="25" width="1440" height="814" />
     </state>
+    <state width="1398" height="101" key="GridCell.Tab.0.center/0.25.1440.814@0.25.1440.814" timestamp="1626260125530" />
     <state width="695" height="255" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1626246308317" />
-    <state width="695" height="180" key="GridCell.Tab.0.center/0.25.1440.821@0.25.1440.821" timestamp="1626246868545" />
-    <state width="695" height="180" key="GridCell.Tab.0.left" timestamp="1626246868545">
-      <screen x="0" y="25" width="1440" height="821" />
+    <state width="1398" height="221" key="GridCell.Tab.0.center/0.25.1440.821@0.25.1440.821" timestamp="1626259578877" />
+    <state width="1398" height="101" key="GridCell.Tab.0.left" timestamp="1626260125529">
+      <screen x="0" y="25" width="1440" height="814" />
     </state>
+    <state width="1398" height="101" key="GridCell.Tab.0.left/0.25.1440.814@0.25.1440.814" timestamp="1626260125529" />
     <state width="695" height="255" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1626246308316" />
-    <state width="695" height="180" key="GridCell.Tab.0.left/0.25.1440.821@0.25.1440.821" timestamp="1626246868545" />
-    <state width="695" height="180" key="GridCell.Tab.0.right" timestamp="1626246868545">
+    <state width="1398" height="221" key="GridCell.Tab.0.left/0.25.1440.821@0.25.1440.821" timestamp="1626259578876" />
+    <state width="1398" height="101" key="GridCell.Tab.0.right" timestamp="1626260125531">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state width="1398" height="101" key="GridCell.Tab.0.right/0.25.1440.814@0.25.1440.814" timestamp="1626260125531" />
+    <state width="695" height="255" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1626246308318" />
+    <state width="1398" height="221" key="GridCell.Tab.0.right/0.25.1440.821@0.25.1440.821" timestamp="1626259578877" />
+    <state x="320" y="172" key="Vcs.Push.Dialog.v2" timestamp="1626259438084">
       <screen x="0" y="25" width="1440" height="821" />
     </state>
-    <state width="695" height="255" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1626246308318" />
-    <state width="695" height="180" key="GridCell.Tab.0.right/0.25.1440.821@0.25.1440.821" timestamp="1626246868545" />
+    <state x="320" y="172" key="Vcs.Push.Dialog.v2/0.25.1440.821@0.25.1440.821" timestamp="1626259438084" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
