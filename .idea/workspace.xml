@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala_helloworld/scala_helloworld.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala_helloworld/src/main/scala/helloworld.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ConCurrent/KeywordsCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ConCurrent/MultiReadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ConCurrent/ReadThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MultiThread/MultiThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S195_Tenth_Line/solution.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S239_Sliding_Window_Maximum/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/ContentAppend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/META-INF/leetcode.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/S35_Search_Insert_Position/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/ATMTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/ATMTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/AccumlateSumTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/AssertTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/CmdTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/CommandTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/CrontabSim.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/HdfsChartInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/LambdaFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/ListMergeTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/MemTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/ObjectTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/SplitAndFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/StaticTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/TestFields.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S3_Longest_Substring_Without_Repeating_Characters/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S3_Longest_Substring_Without_Repeating_Characters/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +73,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MultiThread">
+  <component name="RunManager" selected="Application.Solution">
     <configuration name="MultiReadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ConCurrent.MultiReadTest" />
       <module name="leetcode" />
@@ -128,19 +100,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S209_Minimum_Size_Subarray_Sum.Solution" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="S209_Minimum_Size_Subarray_Sum.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Solution (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="S239_Sliding_Window_Maximum.Solution" />
       <module name="leetcode" />
@@ -150,6 +109,30 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S3_Longest_Substring_Without_Repeating_Characters.Solution" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="S3_Longest_Substring_Without_Repeating_Characters.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution" />
         <item itemvalue="Application.MultiThread" />
         <item itemvalue="Application.MultiReadTest" />
         <item itemvalue="Scala REPL.Scala REPL" />
         <item itemvalue="Application.Solution (3)" />
-        <item itemvalue="Application.Solution (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -332,71 +315,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="20201109 update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="523" y="271" key="#Notifications" timestamp="1608179304612">
-      <screen x="0" y="25" width="1440" height="819" />
+    <state width="695" height="180" key="GridCell.Tab.0.bottom" timestamp="1626246868546">
+      <screen x="0" y="25" width="1440" height="821" />
     </state>
-    <state x="523" y="271" key="#Notifications/0.25.1440.819@0.25.1440.819" timestamp="1608179304612" />
-    <state x="208" y="25" width="1024" height="819" key="#Project_Structure" timestamp="1611712990875">
-      <screen x="0" y="25" width="1440" height="819" />
+    <state width="695" height="255" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1626246308318" />
+    <state width="695" height="180" key="GridCell.Tab.0.bottom/0.25.1440.821@0.25.1440.821" timestamp="1626246868546" />
+    <state width="695" height="180" key="GridCell.Tab.0.center" timestamp="1626246868545">
+      <screen x="0" y="25" width="1440" height="821" />
     </state>
-    <state x="208" y="25" width="1024" height="819" key="#Project_Structure/0.25.1440.819@0.25.1440.819" timestamp="1611712990875" />
-    <state x="184" y="92" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611713272940">
-      <screen x="0" y="25" width="1440" height="817" />
+    <state width="695" height="255" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1626246308317" />
+    <state width="695" height="180" key="GridCell.Tab.0.center/0.25.1440.821@0.25.1440.821" timestamp="1626246868545" />
+    <state width="695" height="180" key="GridCell.Tab.0.left" timestamp="1626246868545">
+      <screen x="0" y="25" width="1440" height="821" />
     </state>
-    <state x="184" y="92" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.817@0.25.1440.817" timestamp="1611713272940" />
-    <state x="533" y="150" key="#com.intellij.ide.util.MemberChooser" timestamp="1614132460836">
-      <screen x="0" y="25" width="1440" height="820" />
+    <state width="695" height="255" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1626246308316" />
+    <state width="695" height="180" key="GridCell.Tab.0.left/0.25.1440.821@0.25.1440.821" timestamp="1626246868545" />
+    <state width="695" height="180" key="GridCell.Tab.0.right" timestamp="1626246868545">
+      <screen x="0" y="25" width="1440" height="821" />
     </state>
-    <state x="533" y="150" key="#com.intellij.ide.util.MemberChooser/0.25.1440.818@0.25.1440.818" timestamp="1614131644168" />
-    <state x="533" y="150" key="#com.intellij.ide.util.MemberChooser/0.25.1440.820@0.25.1440.820" timestamp="1614132460836" />
-    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser/0.25.1440.822@0.25.1440.822" timestamp="1606224845109" />
-    <state width="1398" height="254" key="GridCell.Tab.0.bottom" timestamp="1614736525188">
-      <screen x="0" y="25" width="1440" height="829" />
-    </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.25.1440.819@0.25.1440.819" timestamp="1611713197893" />
-    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.25.1440.821@0.25.1440.821" timestamp="1612243329000" />
-    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.25.1440.824@0.25.1440.824" timestamp="1614243844488" />
-    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.25.1440.825@0.25.1440.825" timestamp="1614243828760" />
-    <state width="1398" height="254" key="GridCell.Tab.0.bottom/0.25.1440.826@0.25.1440.826" timestamp="1614649971338" />
-    <state width="1398" height="254" key="GridCell.Tab.0.bottom/0.25.1440.829@0.25.1440.829" timestamp="1614736525188" />
-    <state width="1398" height="254" key="GridCell.Tab.0.center" timestamp="1614736525187">
-      <screen x="0" y="25" width="1440" height="829" />
-    </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.center/0.25.1440.819@0.25.1440.819" timestamp="1611713197892" />
-    <state width="1398" height="199" key="GridCell.Tab.0.center/0.25.1440.821@0.25.1440.821" timestamp="1612243328999" />
-    <state width="1398" height="199" key="GridCell.Tab.0.center/0.25.1440.824@0.25.1440.824" timestamp="1614243844487" />
-    <state width="1398" height="199" key="GridCell.Tab.0.center/0.25.1440.825@0.25.1440.825" timestamp="1614243828760" />
-    <state width="1398" height="254" key="GridCell.Tab.0.center/0.25.1440.826@0.25.1440.826" timestamp="1614649971337" />
-    <state width="1398" height="254" key="GridCell.Tab.0.center/0.25.1440.829@0.25.1440.829" timestamp="1614736525187" />
-    <state width="1398" height="254" key="GridCell.Tab.0.left" timestamp="1614736525187">
-      <screen x="0" y="25" width="1440" height="829" />
-    </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.left/0.25.1440.819@0.25.1440.819" timestamp="1611713197891" />
-    <state width="1398" height="199" key="GridCell.Tab.0.left/0.25.1440.821@0.25.1440.821" timestamp="1612243328999" />
-    <state width="1398" height="199" key="GridCell.Tab.0.left/0.25.1440.824@0.25.1440.824" timestamp="1614243844486" />
-    <state width="1398" height="199" key="GridCell.Tab.0.left/0.25.1440.825@0.25.1440.825" timestamp="1614243828759" />
-    <state width="1398" height="254" key="GridCell.Tab.0.left/0.25.1440.826@0.25.1440.826" timestamp="1614649971336" />
-    <state width="1398" height="254" key="GridCell.Tab.0.left/0.25.1440.829@0.25.1440.829" timestamp="1614736525187" />
-    <state width="1398" height="254" key="GridCell.Tab.0.right" timestamp="1614736525188">
-      <screen x="0" y="25" width="1440" height="829" />
-    </state>
-    <state width="1398" height="199" key="GridCell.Tab.0.right/0.25.1440.819@0.25.1440.819" timestamp="1611713197893" />
-    <state width="1398" height="199" key="GridCell.Tab.0.right/0.25.1440.821@0.25.1440.821" timestamp="1612243328999" />
-    <state width="1398" height="199" key="GridCell.Tab.0.right/0.25.1440.824@0.25.1440.824" timestamp="1614243844487" />
-    <state width="1398" height="199" key="GridCell.Tab.0.right/0.25.1440.825@0.25.1440.825" timestamp="1614243828760" />
-    <state width="1398" height="254" key="GridCell.Tab.0.right/0.25.1440.826@0.25.1440.826" timestamp="1614649971337" />
-    <state width="1398" height="254" key="GridCell.Tab.0.right/0.25.1440.829@0.25.1440.829" timestamp="1614736525188" />
-    <state x="521" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607655079462">
-      <screen x="0" y="25" width="1440" height="817" />
-    </state>
-    <state x="521" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.817@0.25.1440.817" timestamp="1607655079462" />
-    <state x="161" y="42" key="new project wizard" timestamp="1614650379871">
-      <screen x="0" y="25" width="1440" height="826" />
-    </state>
-    <state x="161" y="42" key="new project wizard/0.25.1440.817@0.25.1440.817" timestamp="1611713292297" />
-    <state x="161" y="42" key="new project wizard/0.25.1440.819@0.25.1440.819" timestamp="1611712979297" />
-    <state x="161" y="42" key="new project wizard/0.25.1440.823@0.25.1440.823" timestamp="1606312137397" />
-    <state x="161" y="42" key="new project wizard/0.25.1440.826@0.25.1440.826" timestamp="1614650379870" />
+    <state width="695" height="255" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1626246308318" />
+    <state width="695" height="180" key="GridCell.Tab.0.right/0.25.1440.821@0.25.1440.821" timestamp="1626246868545" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

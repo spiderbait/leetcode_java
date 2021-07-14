@@ -1,23 +1,59 @@
 package S3_Longest_Substring_Without_Repeating_Characters;
 
-class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        StringBuilder sb = new StringBuilder();
-        int maxLength = 0;
-        for (int j = 0; j < s.length(); j++) {
-            if (sb.toString().contains(Character.toString(s.charAt(j)))) {
-                sb.delete(0, sb.length());
-                sb.append(s.charAt(j));
-            } else {
-                sb.append(s.charAt(j));
-            }
-            if (sb.length() > maxLength) {
-                maxLength = sb.length();
-            }
-        }
+import java.util.HashMap;
 
+class Solution {
+//    public int lengthOfLongestSubstring(String s) {
+//        StringBuilder sb = new StringBuilder();
+//        int maxLength = 0;
+//        for (int j = 0; j < s.length(); j++) {
+//            if (sb.toString().contains(Character.toString(s.charAt(j)))) {
+//                sb.delete(0, sb.length());
+//                sb.append(s.charAt(j));
+//            } else {
+//                sb.append(s.charAt(j));
+//            }
+//            if (sb.length() > maxLength) {
+//                maxLength = sb.length();
+//            }
+//        }
+//
+//        return maxLength;
+//    }
+
+    public int lengthOfLongestSubstring(String s) {
+        // 如果是空的，就没必要判断了
+        if(s == ""){
+            return 0;
+        }
+        int curLength = 0; // 记录以当前字符的上一个字符为结尾的最长不重复子字符串
+        int maxLength = 0; // 记录最长不重复子串
+        HashMap<Character,Integer> stringIndex = new HashMap<>(); // 字符出现的下标
+
+        for(int i = 0;i<s.length();i++){
+            if (stringIndex.containsKey(s.charAt(i))){
+                // 如果该字符出现过
+                int d = i - stringIndex.get(s.charAt(i)); // 计算当前字符与上一次出现时的距离
+                if(d>curLength){
+                    // 如果上一次出现的位置不在当前最长不重复的子串中
+                    curLength++;
+                } else {
+                    // 如果在
+                    curLength = d;
+                }
+            } else {
+                // 如果当前字符没有出现过
+                curLength ++;
+            }
+            if (curLength > maxLength){
+                maxLength = curLength;
+            }
+            stringIndex.put(s.charAt(i),i);
+        }
         return maxLength;
     }
+
+
 
     public static void main(String[] args) {
         Solution s = new Solution();
