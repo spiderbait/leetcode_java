@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/S36_Valid_Sudoku/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S3_Longest_Substring_Without_Repeating_Characters/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S3_Longest_Substring_Without_Repeating_Characters/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,17 +126,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="scala_helloworld" />
       <option name="allowRunningInParallel" value="false" />
@@ -155,7 +144,6 @@
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.MultiThread" />
         <item itemvalue="Application.MultiReadTest" />
-        <item itemvalue="Scala REPL.Scala REPL" />
         <item itemvalue="Application.Solution (3)" />
       </list>
     </recent_temporary>
@@ -216,6 +204,8 @@
       <workItem from="1611712614264" duration="6000" />
       <workItem from="1611712876146" duration="3905000" />
       <workItem from="1614130136950" duration="12491000" />
+      <workItem from="1626356990446" duration="155000" />
+      <workItem from="1626357291714" duration="600000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -294,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626259415953</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="20210714 sync">
+      <created>1626260742594</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1626260742594</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,37 +320,51 @@
     <option name="LAST_COMMIT_MESSAGE" value="20210714 sync" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="285" y="25" key="CommitChangelistDialog2" timestamp="1626259415688">
-      <screen x="0" y="25" width="1440" height="821" />
+    <state x="461" y="365" key="#Updates" timestamp="1626357093048">
+      <screen x="0" y="25" width="1440" height="818" />
     </state>
-    <state x="285" y="25" key="CommitChangelistDialog2/0.25.1440.821@0.25.1440.821" timestamp="1626259415688" />
-    <state width="1398" height="101" key="GridCell.Tab.0.bottom" timestamp="1626260125531">
+    <state x="461" y="365" key="#Updates/0.25.1440.818@0.25.1440.818" timestamp="1626357093048" />
+    <state x="408" y="172" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1626357005191">
+      <screen x="0" y="25" width="1440" height="818" />
+    </state>
+    <state x="408" y="172" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1440.818@0.25.1440.818" timestamp="1626357005191" />
+    <state x="285" y="25" key="CommitChangelistDialog2" timestamp="1626260742461">
       <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state x="285" y="25" key="CommitChangelistDialog2/0.25.1440.814@0.25.1440.814" timestamp="1626260742461" />
+    <state x="285" y="25" key="CommitChangelistDialog2/0.25.1440.821@0.25.1440.821" timestamp="1626259415688" />
+    <state width="1398" height="101" key="GridCell.Tab.0.bottom" timestamp="1626356936999">
+      <screen x="0" y="25" width="1440" height="818" />
     </state>
     <state width="1398" height="101" key="GridCell.Tab.0.bottom/0.25.1440.814@0.25.1440.814" timestamp="1626260125531" />
+    <state width="1398" height="101" key="GridCell.Tab.0.bottom/0.25.1440.818@0.25.1440.818" timestamp="1626356936999" />
     <state width="695" height="255" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1626246308318" />
     <state width="1398" height="221" key="GridCell.Tab.0.bottom/0.25.1440.821@0.25.1440.821" timestamp="1626259578878" />
-    <state width="1398" height="101" key="GridCell.Tab.0.center" timestamp="1626260125530">
-      <screen x="0" y="25" width="1440" height="814" />
+    <state width="1398" height="101" key="GridCell.Tab.0.center" timestamp="1626356936999">
+      <screen x="0" y="25" width="1440" height="818" />
     </state>
     <state width="1398" height="101" key="GridCell.Tab.0.center/0.25.1440.814@0.25.1440.814" timestamp="1626260125530" />
+    <state width="1398" height="101" key="GridCell.Tab.0.center/0.25.1440.818@0.25.1440.818" timestamp="1626356936999" />
     <state width="695" height="255" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1626246308317" />
     <state width="1398" height="221" key="GridCell.Tab.0.center/0.25.1440.821@0.25.1440.821" timestamp="1626259578877" />
-    <state width="1398" height="101" key="GridCell.Tab.0.left" timestamp="1626260125529">
-      <screen x="0" y="25" width="1440" height="814" />
+    <state width="1398" height="101" key="GridCell.Tab.0.left" timestamp="1626356936999">
+      <screen x="0" y="25" width="1440" height="818" />
     </state>
     <state width="1398" height="101" key="GridCell.Tab.0.left/0.25.1440.814@0.25.1440.814" timestamp="1626260125529" />
+    <state width="1398" height="101" key="GridCell.Tab.0.left/0.25.1440.818@0.25.1440.818" timestamp="1626356936999" />
     <state width="695" height="255" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1626246308316" />
     <state width="1398" height="221" key="GridCell.Tab.0.left/0.25.1440.821@0.25.1440.821" timestamp="1626259578876" />
-    <state width="1398" height="101" key="GridCell.Tab.0.right" timestamp="1626260125531">
-      <screen x="0" y="25" width="1440" height="814" />
+    <state width="1398" height="101" key="GridCell.Tab.0.right" timestamp="1626356936999">
+      <screen x="0" y="25" width="1440" height="818" />
     </state>
     <state width="1398" height="101" key="GridCell.Tab.0.right/0.25.1440.814@0.25.1440.814" timestamp="1626260125531" />
+    <state width="1398" height="101" key="GridCell.Tab.0.right/0.25.1440.818@0.25.1440.818" timestamp="1626356936999" />
     <state width="695" height="255" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1626246308318" />
     <state width="1398" height="221" key="GridCell.Tab.0.right/0.25.1440.821@0.25.1440.821" timestamp="1626259578877" />
-    <state x="320" y="172" key="Vcs.Push.Dialog.v2" timestamp="1626259438084">
-      <screen x="0" y="25" width="1440" height="821" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1626260747778">
+      <screen x="0" y="25" width="1440" height="814" />
     </state>
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.25.1440.814@0.25.1440.814" timestamp="1626260747778" />
     <state x="320" y="172" key="Vcs.Push.Dialog.v2/0.25.1440.821@0.25.1440.821" timestamp="1626259438084" />
   </component>
   <component name="XDebuggerManager">
