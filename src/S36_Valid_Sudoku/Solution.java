@@ -2,23 +2,23 @@ package S36_Valid_Sudoku;
 
 public class Solution {
     public boolean isValidSudoku(char[][] board) {
-
+        char[] rowRegister = new char[board[0].length];
+        char[] columnRegister = new char[board.length];
+        for (int i=0; i<board.length; i++) {
+            for (int j=0; j<board[0].length; j++) {
+                if (board[i][j] == '.') {
+                    continue;
+                }
+            }
+        }
+        return true;
     }
 
-    public boolean isValidColumn(char[] columns) {
-
-    }
-
-    public boolean isValidRow(char[] rows) {
-
-    }
-
-    public boolean isValidCell(char[] cell) {
-
-    }
 
     public static void main(String[] args) {
-       char[][] board1 = {{'5','3','.','.','7','.','.','.','.'}
+
+       char[][] board1 =
+               {{'5','3','.','.','7','.','.','.','.'}
                ,{'6','.','.','1','9','5','.','.','.'}
                ,{'.','9','8','.','.','.','.','6','.'}
                ,{'8','.','.','.','6','.','.','.','3'}
@@ -28,7 +28,8 @@ public class Solution {
                ,{'.','.','.','4','1','9','.','.','5'}
                ,{'.','.','.','.','8','.','.','7','9'}};
 
-       char[][] board2 = {{'8','3','.','.','7','.','.','.','.'}
+       char[][] board2 =
+               {{'8','3','.','.','7','.','.','.','.'}
                ,{'6','.','.','1','9','5','.','.','.'}
                ,{'.','9','8','.','.','.','.','6','.'}
                ,{'8','.','.','.','6','.','.','.','3'}
@@ -37,5 +38,7 @@ public class Solution {
                ,{'.','6','.','.','.','.','2','8','.'}
                ,{'.','.','.','4','1','9','.','.','5'}
                ,{'.','.','.','.','8','.','.','7','9'}};
+
     }
+
 }
