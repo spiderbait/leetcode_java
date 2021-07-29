@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S47_Permutations_II/ScanExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S47_Permutations_II/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S36_Valid_Sudoku/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S36_Valid_Sudoku/Solution.java" afterDir="false" />
-    </list>
+    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -239,7 +233,7 @@
       <workItem from="1627306505631" duration="623000" />
       <workItem from="1627392203222" duration="6111000" />
       <workItem from="1627564097727" duration="2469000" />
-      <workItem from="1627566655857" duration="5498000" />
+      <workItem from="1627566655857" duration="5825000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -332,7 +326,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627397362563</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add problem s47 but not solved">
+      <created>1627572429019</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1627572429019</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add problem s47 but not solved">
+      <created>1627572467897</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1627572467897</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +371,8 @@
     <MESSAGE value="20210713 sync" />
     <MESSAGE value="add longest substring without repeating character" />
     <MESSAGE value="finished and passed problem No.36 Valid Sudoku." />
-    <option name="LAST_COMMIT_MESSAGE" value="finished and passed problem No.36 Valid Sudoku." />
+    <MESSAGE value="add problem s47 but not solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="add problem s47 but not solved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
