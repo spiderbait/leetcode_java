@@ -111,12 +111,12 @@ public class Solution {
        char[] row = {'.','9','8','.','.','6','.','6','.'};
 
         Solution s = new Solution();
-        System.out.println(s.isValidSudoku(board2));
+//        System.out.println(s.isValidSudoku(board2));
 //        System.out.println(s.isValidRowOrColumn(row));
 //        char[][] transposedBoard1 = s.transpose(board1);
 //        s.printBoard(board1);
 //        s.printBoard(transposedBoard1);
-//        s.printBoard(s.flatten(board1));
+        s.printBoard(s.flatten(board1));
 
     }
 }
