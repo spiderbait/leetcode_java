@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="" />
+    <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/S100_Same_Tree/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S100_Same_Tree/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S100_Same_Tree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S94_Binary_Tree_Inorder_Traversal/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S94_Binary_Tree_Inorder_Traversal/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/InterruptTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_7_28__9_24_AM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +73,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565928244453" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/work/lib/log4j-core-2.12.1.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/work/apache/kafka-2.8.0-src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -78,7 +87,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution (2)">
+  <component name="RunManager" selected="Application.Solution">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -92,38 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThread.MultiThread" />
+    <configuration name="InterruptTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.InterruptTest" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MultiThread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScanExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S47_Permutations_II.ScanExecutor" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="S47_Permutations_II.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S36_Valid_Sudoku.Solution" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="S36_Valid_Sudoku.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,12 +127,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S3_Longest_Substring_Without_Repeating_Characters.Solution" />
+    <configuration name="Solution (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S94_Binary_Tree_Inorder_Traversal.Solution" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S3_Longest_Substring_Without_Repeating_Characters.*" />
+          <option name="PATTERN" value="S94_Binary_Tree_Inorder_Traversal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S100_Same_Tree.Solution" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="S100_Same_Tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S100_Same_Tree.Test" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="S100_Same_Tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution (2)" />
-        <item itemvalue="Application.ScanExecutor" />
-        <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.MultiThread" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Solution (3)" />
+        <item itemvalue="Application.InterruptTest" />
+        <item itemvalue="Application.Solution (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +242,10 @@
       <workItem from="1627306505631" duration="623000" />
       <workItem from="1627392203222" duration="6111000" />
       <workItem from="1627564097727" duration="2469000" />
-      <workItem from="1627566655857" duration="5825000" />
+      <workItem from="1627566655857" duration="5849000" />
+      <workItem from="1628783621640" duration="471000" />
+      <workItem from="1629903494190" duration="664000" />
+      <workItem from="1630503650261" duration="5500000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -340,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627572467897</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add problem s47 but not solved">
+      <created>1627572535169</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1627572535169</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,6 +400,11 @@
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/S100_Same_Tree/Solution.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
