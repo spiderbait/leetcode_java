@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd089b80-92c8-4b0d-add1-b08a7c2f093c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/S100_Same_Tree/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S100_Same_Tree/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S100_Same_Tree/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S94_Binary_Tree_Inorder_Traversal/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S94_Binary_Tree_Inorder_Traversal/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/InterruptTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_7_28__9_24_AM__Default_Changelist_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S100_Same_Tree/JumpOutException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S100_Same_Tree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S100_Same_Tree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S100_Same_Tree/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S100_Same_Tree/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +241,8 @@
       <workItem from="1627566655857" duration="5849000" />
       <workItem from="1628783621640" duration="471000" />
       <workItem from="1629903494190" duration="664000" />
-      <workItem from="1630503650261" duration="5500000" />
+      <workItem from="1630503650261" duration="5704000" />
+      <workItem from="1630590188951" duration="6676000" />
     </task>
     <task id="LOCAL-00001" summary="two problems added">
       <created>1565864362109</created>
@@ -359,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627572535169</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added s100_same_tree and s94 binary_tree_inorder_traversal">
+      <created>1630510818174</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1630510818174</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +395,8 @@
     <MESSAGE value="add longest substring without repeating character" />
     <MESSAGE value="finished and passed problem No.36 Valid Sudoku." />
     <MESSAGE value="add problem s47 but not solved" />
-    <option name="LAST_COMMIT_MESSAGE" value="add problem s47 but not solved" />
+    <MESSAGE value="added s100_same_tree and s94 binary_tree_inorder_traversal" />
+    <option name="LAST_COMMIT_MESSAGE" value="added s100_same_tree and s94 binary_tree_inorder_traversal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -402,7 +407,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/S100_Same_Tree/Solution.java</url>
-          <line>49</line>
+          <line>152</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
